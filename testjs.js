@@ -1,3 +1,5 @@
+var sumName = "";
+
 function summonerLookUp() {
     var SUMMONER_NAME = "";
     SUMMONER_NAME = $("#userName").val();
