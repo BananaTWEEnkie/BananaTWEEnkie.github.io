@@ -3,26 +3,48 @@
 <html>
 <body>
 <center>
-<ul>
-	<li>Home</li>
-	<li>About</li>
-</ul>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<br>
+<div class="nav">
+	<div class="container">
+		<ul>
+			<li>Home</li>
+			<li>About</li>
+		</ul>
+	</div>
+</div>
 
-<script>
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://www.codecademy.com/", false);
-xhr.send();
+<div class="jumbotron">
+	<div class="container">	
+		<h1>Hello World</h1>
+		<p>I'm hosted with GitHub Pages.</p>
+		<br>
 
-//document.write(xhr.status);
-</script>
+		<script>
+		var xhr = new XMLHttpRequest();
+		xhr.open("GET", "https://www.codecademy.com/", false);
+		xhr.send();
 
-<img src="http://nerdreactor.com/wp-content/uploads/2014/07/League-of-Legends-Banner.png">
+		//document.write(xhr.status);
+		</script>
+	
+		<img src="http://nerdreactor.com/wp-content/uploads/2014/07/League-of-Legends-Banner.png">
 
-<!-- https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/RiotSchmick?api_key=222fb254-63ca-4338-9b7d-397694c1e099 -->
+		<!-- https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/RiotSchmick?api_key=222fb254-63ca-4338-9b7d-397694c1e099 -->
+	</div>
+</div>
 
+DEV KEY
+<br />
+<input id="theKey" />
+<br />Summoner Name
+<br />
+<input id="userName" />
+<input type="submit" onclick="summonerLookUp();" />
+<br />
+<br />Summoner Level: <span id="sLevel"></span>
+
+<br />Summoner ID: <span id="sID"></span>
+	
+	
 </center>
 </body>
 </html>
