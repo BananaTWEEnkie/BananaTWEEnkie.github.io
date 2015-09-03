@@ -1,0 +1,212 @@
+{
+	"3001": {
+		"name": "Abyssal Scepter",
+		"cost": 2440,
+		"cost2": 2450
+	},
+	"3113": {
+		"name": "Aether Wisp",
+		"cost": 850,
+		"cost2": 850 
+	},
+	"1052": {
+		"name": "Amplifying Tome",
+		"cost": 435,
+		"cost2":  435
+	},
+	"3003": {
+		"name": "Archangel's Staff",
+		"cost": 2700,
+		"cost2": 3000
+	},
+	"3504": {
+		"name": "Ardent Censer",
+		"cost": 2100,
+		"cost2": 2100
+	},
+	"3174": {
+		"name": "Athene's Unholy Grail",
+		"cost": 2700,
+		"cost2": 2700
+	},
+	"3060": {
+		"name": "Banner of Command",
+		"cost": 3000,
+		"cost2": 3000
+	},
+	"1026": {
+		"name": "Blasting Wand",
+		"cost": 860,
+		"cost2": 850
+	},
+	"1056": {
+		"name": "Doran's Ring",
+		"cost": 400,
+		"cost2": 400
+	},
+	"3108": {
+		"name": "Fiendish Codex",
+		"cost": 820,
+		"cost2": 820
+	},	
+	"3092": {
+		"name": "Frost Queen's Claim",
+		"cost": 2200,
+		"cost2": 2200
+	},
+	"3098": {
+		"name": "Frostfang",
+		"cost": 865,
+		"cost2": 865
+	},
+	"3124": {
+		"name": "Guinsoo's Rageblade",
+		"cost": 2600,
+		"cost2": 2590
+	},
+	"3136": {
+		"name": "Haunting Guise",
+		"cost": 1485,
+		"cost2": 1500
+	},
+	"3146": {
+		"name": "Hextech Gunblade",
+		"cost": 3400,
+		"cost2":  3400
+	},
+	"3145": {
+		"name": "Hextech Revolver",
+		"cost": 1200,
+		"cost2": 1200
+	},	
+	"3025": {
+		"name": "Iceborn Gauntlet",
+		"cost": 2850,
+		"cost2": 2850
+	},
+	"3151": {
+		"name": "Liandry's Torment",
+		"cost": 2900,
+		"cost2": 3000
+	},	
+	"3100": {
+		"name": "Lich Bane",
+		"cost": 3000,
+		"cost2": 3000
+	},
+	"3285": {
+		"name": "Luden's Echo",
+		"cost": 3100,
+		"cost2": 3000
+	},
+	"3708": {
+		"name": "Stalker's Blade - Magus",
+		"name2": "Stalker's Blade - Runeglaive",
+		"cost": 2650,
+		"cost2": 2250
+	},
+	"3716": {
+		"name": "Skirmisher's Sabre - Magus",
+		"name2": "Skirmisher's Sabre - Runeglaive",
+		"cost": 2650,
+		"cost2": 2250
+	},
+	"3720": {
+		"name": "Poacher's Knife - Magus",
+		"name2": "Poacher's Knife - Runeglaive",
+		"cost": 2650,
+		"cost2": 2250
+	},
+	"3724": {
+		"name": "Ranger's Trailblazer - Magus",
+		"name2": "Ranger's Trailblazer - Runeglaive",
+		"cost": 2650,
+		"cost2": 2250
+	},
+	"3041": {
+		"name": "Mejai's Soulstealer",
+		"cost": 1400,
+		"cost2": 1400
+	},
+	"3165": {
+		"name": "Morellonomicon",
+		"cost": 2300,
+		"cost2": 2300
+	},
+	"3115": {
+		"name": "Nashor's Tooth",
+		"cost": 2920,
+		"cost2": 3000
+	},
+	"1058": {
+		"name": "Needlessly Large Rod",
+		"cost": 1600,
+		"cost2": 1250
+	},
+	"3089": {
+		"name": "Rabadon's Deathcap",
+		"cost": 3300,
+		"cost2": 3500
+	},	
+	"3027": {
+		"name": "Rod of Ages",
+		"cost": 2800,
+		"cost2": 2700
+	},
+	"3116": {
+		"name": "Rylai's Crystal Scepter",
+		"cost": 2900,
+		"cost2": 3000
+	},	
+	"3191": {
+		"name": "Seeker's Armguard",
+		"cost": 1200,
+		"cost2": 1200
+	},
+	"3040": {
+		"name": "Seraph's Embrace",
+		"cost": 2700,
+		"cost2": 3000
+	},	
+	"3057": {
+		"name": "Sheen",
+		"cost": 1200,
+		"cost2": 1200
+	},	
+	"3020": {
+		"name": "Sorcerer's Shoes",
+		"cost": 1100,
+		"cost2": 1100
+	},
+	"3303": {
+		"name": "Spellthief's Edge",
+		"cost": 365,
+		"cost2": 365
+	},
+	"3023": {
+		"name": "Twin Shadows",
+		"cost": 2400,
+		"cost2": 2400
+	},
+	"3135": {
+		"name": "Void Staff",
+		"cost": 2295,
+		"cost2": 2500
+	},	
+	"3152": {
+		"name": "Will of the Ancients",
+		"cost": 2500,
+		"cost2": 2500
+	},
+	"3050": {
+		"name": "Zeke's Herald",
+		"name2": "Zeke's Harbinger",
+		"cost": 2450,
+		"cost2": 2250
+	},
+	"3157": {
+		"name": "Zhonya's Hourglass",
+		"cost": 3300,
+		"cost2": 3000
+	}
+}
