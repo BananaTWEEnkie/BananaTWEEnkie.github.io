@@ -17,14 +17,9 @@
 		<h1>Hello World</h1>
 		<p>I'm hosted with GitHub Pages.</p>
 		<br>
-
-		<script>
-		var xhr = new XMLHttpRequest();
-		xhr.open("GET", "https://www.codecademy.com/", false);
-		xhr.send();
-
-		//document.write(xhr.status);
-		</script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<button type="button" class="btn btn-primary">CLICK HERE</button>
 	
 		<img src="http://nerdreactor.com/wp-content/uploads/2014/07/League-of-Legends-Banner.png">
 
@@ -35,7 +30,7 @@
 DEV KEY
 <br />
 <input id="theKey" />
-<br />Summoner Name BO
+<br />Summoner Name BOBBY
 <br />
 <input id="userName" />
 <input type="submit" onclick="summonerLookUp();" />
@@ -43,44 +38,6 @@ DEV KEY
 <br />Summoner Level: <span id="sLevel"></span>
 
 <br />Summoner ID: <span id="sID"></span>
-<script>
-var sumName = "";
-
-function summonerLookUp() {
-    var SUMMONER_NAME = "";
-    SUMMONER_NAME = $("#userName").val();
-
-    var API_KEY = "";
-    API_KEY = $("#theKey").val();
-
-    if (SUMMONER_NAME !== "") {
-
-        $.ajax({
-            url: 'https://na.api.pvp.net/api/lol/na/v1.4/summoner/by-name/' + SUMMONER_NAME + '?api_key=' + API_KEY,
-            type: 'GET',
-            dataType: 'json',
-            data: {
-
-            },
-            success: function (json) {
-                var SUMMONER_NAME_NOSPACES = SUMMONER_NAME.replace(" ", "");
-
-                SUMMONER_NAME_NOSPACES = SUMMONER_NAME_NOSPACES.toLowerCase().trim();
-
-                summonerLevel = json[SUMMONER_NAME_NOSPACES].summonerLevel;
-                summonerID = json[SUMMONER_NAME_NOSPACES].id;
-
-                document.getElementById("sLevel").innerHTML = summonerLevel;
-                document.getElementById("sID").innerHTML = summonerID;
-
-            },
-            error: function (XMLHttpRequest, textStatus, errorThrown) {
-                alert("error getting Summoner data!");
-            }
-        });
-    } else {}
-}
-</script>
 	
 </center>
 </body>
