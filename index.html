@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- <link rel="stylesheet" href="http://getbootstrap.com/examples/blog/blog.css"> -->
 	<link rel="stylesheet" href="css/styles.css">
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<!-- Set Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- set browser tab -->
@@ -20,7 +21,7 @@
 			<nav class="blog-nav" class="navbar navbar-default navbar-fixed-top">
 				<a class="blog-nav-item active" href="#">Home</a>
 				<a class="blog-nav-item" href="./projects/GreatCalPolyUnderground.html">Projects</a>
-				<a class="blog-nav-item" href="#projects">Pro</a>
+				<a class="blog-nav-item" href="#projects">Projo</a>
 			</nav>
 		</div>
 	</div>	
@@ -70,5 +71,12 @@
 		<br>
 	</div>
 </center>
+<script>
+   jQuery(function($){
+       $(".tabmenu").children("div").click(function(){
+           $(".current").removeClass("current");
+       });
+   });
+</script>
 </body>
 </html>
