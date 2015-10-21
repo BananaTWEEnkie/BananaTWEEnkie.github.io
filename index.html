@@ -72,11 +72,11 @@
 	</div>
 </center>
 <script>
-   jQuery(function($){
-       $(".tabmenu").children("div").click(function(){
-           $(".current").removeClass("current");
-       });
-   });
+   $('.blog-nav-item').click(function(){
+
+    $('a').removeClass('active');
+    $(this).addClass('active');
+});
 </script>
 </body>
 </html>
