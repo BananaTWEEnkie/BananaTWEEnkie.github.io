@@ -79,13 +79,14 @@ main {
 }
 
 .leftsidebar-nav {
+	position: fixed;
 	background-color:yellowgreen;
-	height:1000px;
-	left: 0px; 
+	height:100%; 
 }
 .rightsidebar-nav {
+	position: fixed;
 	background-color:yellowgreen;
-	height:1000px;
+	height:100%;
 	right: 0px; 
 }
 
@@ -178,4 +179,9 @@ h7 {
 
 .cs-style-2 figcaption a {
 	position: ;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
