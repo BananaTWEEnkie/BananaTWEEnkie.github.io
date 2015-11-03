@@ -57,14 +57,13 @@ main {
 .boxed-title {
 	background-color: #02465D;
 	height: 38px;
-	width: 250px;
+	width: 200px;
 	border-radius: 15px 15px 0px 0px;
 }
 
 .boxed {
-	background-color: lightgrey;
-	width: 250px;
-    border: 5px solid #02465D;
+	height: 300px;
+	width: 300px;
 }
 
 .scroll {
@@ -79,12 +78,104 @@ main {
 	padding:10px;
 }
 
-.sidebar-nav {
-	width: 200px;
-	position: fixed;
+.leftsidebar-nav {
+	background-color:yellowgreen;
+	height:1000px;
 	left: 0px; 
+}
+.rightsidebar-nav {
+	background-color:yellowgreen;
+	height:1000px;
+	right: 0px; 
 }
 
 h7 {
 
+}
+
+.grid {
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+}
+
+.grid li {
+	display: inline-block;
+	width: 440px;
+	margin: 0;
+	padding: 20px;
+	text-align: left;
+	position: relative;
+}
+
+.grid figure {
+	margin: 0;
+	position: relative;
+}
+
+.grid figure img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+}
+
+.grid figcaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px;
+	background: #024961;
+	color: #ed4e6e;
+	border-radius: 15px 15px 5px 5px;
+}
+
+.grid figcaption h3 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
+
+.grid figcaption span:before {
+	content: 'by ';
+}
+/*
+.grid figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: #ed4e6e;
+	color: #fff;
+}*/
+
+@media screen and (max-width: 31.5em) {
+	.grid {
+		padding: 10px 10px 100px 10px;
+	}
+	.grid li {
+		width: 100%;
+		min-width: 300px;
+	}
+}
+
+.cs-style-2 figure img {
+	z-index: 10;
+	transition: transform 0.4s;
+}
+
+.no-touch .cs-style-2 figure:hover img,
+.cs-style-2 figure.cs-hover img {
+	transform: translateX(-200px);
+}
+
+.cs-style-2 figcaption {
+	height: 260px;
+	width: 200px;
+	top: auto;
+	bottom: 0;
+}
+
+.cs-style-2 figcaption a {
+	position: ;
 }

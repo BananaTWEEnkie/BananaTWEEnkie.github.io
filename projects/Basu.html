@@ -1,8 +1,7 @@
 <html lan="en">
 <head>
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Reference Bootstrap -->
-		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../bootstrap/css/styles.css">
 
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -19,24 +18,53 @@
 <body>
 <div class="row">
 	<!-- Create Tabs -->
-	<div class="col-xs-4 col-md-2">
+	<div class="visible-lg col-md-2">
+		<ul class="nav nav-pills nav-stacked leftsidebar-nav">
 		<center>
-		<ul class="nav nav-pills nav-stacked sidebar-nav">
 			<li><h1>Navigation</h1></li>
 			<li role="presentation" class="active"><a href="http://bananatweenkie.github.io/">Home</a></li>
-			<li role="presentation"><a href="#">Profile</a></li>
-			<li role="presentation"><a href="#">Messages</a></li>
-			<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-		  Dropdown <span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu">
-				<li><a href="#">Action</a></li>
-				<li><a href="#">Another action</a></li>
-				<li><a href="#">Something else here</a></li>
-				<li role="separator" class="divider"></li>
-				<li><a href="#">Separated link</a></li>
-			</ul>
-			<li><h1>Contact</h1></li>
+			<li role="presentation"><a href="../Resume.pdf">R&eacute;sum&eacute;</a></li>
+			<li role="presentation" class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+				Other Projects <span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Separated link</a></li>
+				</ul>
+			</li>
+		</center>
+		</ul>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-8">
+		<center>
+			<img src="../projects/images/basuss.png">
+		</center>
+		<br>
+		<div class="jumbotron">
+			<div class="container">
+				<center><h1>Basu</h1></center>
+				<p>This was my first game I built. There was a global game jam hosted by the University of South California in the middle of January in 2015. Me, along with a couple other officers and members from the Game Design and Development Club, decided to go. The team consisted of only 2 people: Shaina, a talanted graphic designer and me as the developer.</p>
+				<br>
+				<center>
+				<a href="http://globalgamejam.org/2015/games/basu-catches-things" class="btn btn-primary" role="button">
+				Global Game Jam <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+				</a>
+				<br><br>
+				<a href="https://dl.dropboxusercontent.com/u/15291942/GameJam/BasuTrashGame/BasuGame.html" class="btn btn-primary" role="button">
+				Play it! <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+				</a>
+				</center>
+				</div>
+		</div>
+	</div>
+	<div class="visible-lg col-md-2">
+	<ul class="nav nav-pills nav-stacked rightsidebar-nav">
+	<center>
+					<li><h1>Contact</h1></li>
 				<!-- E-mail -->
 			<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
 				<a href="mailto:tweenguyentran@gmail.com">
@@ -57,24 +85,8 @@
 						linkedin.com/thuy-tien-nguyen-tran
 					</a>
 			</li>
+			</center>
 		</ul>
-	</center>
-	</div>
-	<div class="col-xs-8 col-md-10">
-		<div class="container">
-			<center><img src="../projects/images/basuss.png">
-			<br></center>
-			<div class="container">
-				<div class="jumbotron">
-					<center><h1>Basu</h1></center>
-					<p>This was my first game I built. There was a global game jam hosted by the University of South California in mid January. Me, along with a couple other officers and members from the game development club, decided to go.</p>
-					<br>
-					<a href="http://globalgamejam.org/2015/games/basu-catches-things"> Global Game Jam </a>
-					<br><br>
-					<a href="https://dl.dropboxusercontent.com/u/15291942/GameJam/BasuTrashGame/BasuGame.html"> Play it!</a>
-				</div>
-			</div>
-		</div>
 	</div>
 </div>
 </body>
