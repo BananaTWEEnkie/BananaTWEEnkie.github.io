@@ -4,7 +4,7 @@ main {
     padding-right: 0px;
     padding-bottom: 3.2em;
     padding-left: 0px;
-    background-color: #575757;
+    background-color: #000;
 }
 
 /*
@@ -17,7 +17,7 @@ main {
   left: 0;
   z-index: 9999;
   width: 100%;
-  background-color: #428bca;
+  background-color: #2980b9;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -80,18 +80,18 @@ main {
 
 .leftsidebar-nav {
 	position: fixed;
-	background-color:yellowgreen;
+	background-color:#7DB4B5;
 	height:100%; 
 }
 .rightsidebar-nav {
 	position: fixed;
-	background-color:yellowgreen;
+	background-color:#7DB4B5;
 	height:100%;
 	right: 0px; 
 }
 
 h7 {
-
+	color:#680148;
 }
 
 .grid {
@@ -184,4 +184,31 @@ h7 {
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+img.resize-project {
+	height: 200px;
+	width: 200px;
+	max-width:100%;
+}
+
+img.resize-gallery {
+	height: 90px;
+	width: 90px;
+	max-width:100%;
+}
+
+a.resize-gallery-expand {
+	height: 500px;
+	width: 500px;
+	max-height: 25%;
+	max-width: 25%;
+}
+
+#hobby {
+	background:#6b9f7d;
+}
+
+#gallery {
+	background:#eb4450;
 }
