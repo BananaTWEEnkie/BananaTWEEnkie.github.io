@@ -43,6 +43,7 @@ main {
 .blog-nav .active {
   color: #fff;
 }
+
 .blog-nav .active:after {
   position: absolute;
   bottom: 0;
@@ -55,18 +56,6 @@ main {
   border-right: 5px solid transparent;
   border-bottom: 5px solid;
   border-left: 5px solid transparent;
-}
-
-.boxed-title {
-	background-color: #02465D;
-	height: 38px;
-	width: 200px;
-	border-radius: 15px 15px 0px 0px;
-}
-
-.boxed {
-	height: 300px;
-	width: 300px;
 }
 
 .scroll {
