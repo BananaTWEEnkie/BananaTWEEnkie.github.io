@@ -113,6 +113,7 @@ h7 {
 }
 
 .grid figcaption {
+	max-width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -194,15 +195,6 @@ img.resize-gallery {
 }
 
 img.effect  {
-    -webkit-transition: all .2s;
-    transition: all .2s;
-}
-
-img.effect:hover  {
-   border: 3px solid white; 
-}
-
-img.effect2 {
   -webkit-filter: brightness(95%);
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -212,7 +204,7 @@ img.effect2 {
 		  border: 3px solid white; 
 }
 
-img.effect2:hover  {
+img.effect:hover  {
   -webkit-filter: brightness(130%);
    border: 3px solid black; 
 }
