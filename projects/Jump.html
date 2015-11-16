@@ -2,12 +2,9 @@
 	<head>
 		<!-- Reference Bootstrap -->
 		<link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="../bootstrap/css/styles.css">
-
-		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-		<script src="../bootstrap/js/bootstrap.min.js"></script>
-		
-				<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="../bootstrap/css/styles.css">	
+		<!-- Reference Font Awesome icons-->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" media="all">
 		<!-- Set Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- set browser tab -->
@@ -137,10 +134,13 @@
 				</center>
 			</div>
 		</div>
+		<!-- Load scripts at the end for faster loading -->
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../bootstrap/js/bootstrap.min.js"></script>
+		<script>
+			$().dropdown('toggle') {
+			$('.dropdown-toggle').dropdown();
+			}
+		</script>
 	</body>
 </html>
-<script>
-$().dropdown('toggle') {
-$('.dropdown-toggle').dropdown();
-}
-</script>

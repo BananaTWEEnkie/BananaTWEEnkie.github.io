@@ -193,6 +193,15 @@ img.resize-gallery {
 	max-width:100%;
 }
 
+img.effect  {
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+img.effect:hover  {
+   border: 3px solid white; 
+}
+
 a.resize-gallery-expand {
 	height: 500px;
 	width: 500px;
@@ -228,8 +237,6 @@ a.resize-gallery-expand {
 
 .hvr-float:active,.hvr-float:focus,.hvr-float:hover{-webkit-transform:translateY(-8px);transform:translateX(15px)}
 
-.hvr-icon-forward{display:inline-block;vertical-align:middle;-webkit-transform:translateZ(0);transform:translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;position:relative;padding-right:2.2em;-webkit-transition-duration:.1s;transition-duration:.1s}.hvr-icon-forward:before{content:"\f138";position:absolute;right:1em;padding:0 1px;font-family:FontAwesome;-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition-duration:.1s;transition-duration:.1s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}.hvr-icon-forward:active:before,.hvr-icon-forward:focus:before,.hvr-icon-forward:hover:before{-webkit-transform:translateX(4px);transform:translateX(4px)}@-webkit-keyframes hvr-icon-down{0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)}25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)}}@keyframes hvr-icon-down{0%,100%,50%{-webkit-transform:translateY(0);transform:translateY(0)}25%,75%{-webkit-transform:translateY(6px);transform:translateY(6px)}}
-
 #contact a.btn.github {
 	display: inline-block;
 	border-radius: 4px;
@@ -239,7 +246,7 @@ a.resize-gallery-expand {
 }
 
 #contact a.btn.github:hover { 
-background-color: #000; color: #cccccc; 
+	background-color: #000; color: #cccccc; 
 }
 
 .scrollup {
