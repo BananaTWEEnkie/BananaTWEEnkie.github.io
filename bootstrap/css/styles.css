@@ -202,6 +202,21 @@ img.effect:hover  {
    border: 3px solid white; 
 }
 
+img.effect2 {
+  -webkit-filter: brightness(95%);
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+		  border: 3px solid white; 
+}
+
+img.effect2:hover  {
+  -webkit-filter: brightness(130%);
+   border: 3px solid black; 
+}
+
 a.resize-gallery-expand {
 	height: 500px;
 	width: 500px;
