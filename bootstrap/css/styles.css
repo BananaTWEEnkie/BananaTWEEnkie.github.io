@@ -194,6 +194,12 @@ img.resize-gallery {
 	max-width:100%;
 }
 
+img.resize-hobby {
+	height: 200px;
+	width: 300px;
+	max-width:100%;
+}
+
 img.effect  {
   -webkit-filter: brightness(95%);
   -webkit-transition: all 1s ease;
@@ -269,5 +275,5 @@ a.resize-gallery-expand {
 }
 
 #hire ul { padding-left: 25%; list-style: none; }
-#hire ul li { padding-left: 40px; margin-bottom: 22px; line-height: 1.5em; color: #000; font-size: 20px; }
+#hire ul li { max-width: 75%; margin-bottom: 12px; line-height: 1.5em; color: #000; font-size: 20px; }
 #hire ul li:before { content: '\f00c'; color: #00ff00; font-family: FontAwesome; display: inline-block; width: 40px; margin-left: -40px; }
