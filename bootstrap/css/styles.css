@@ -1,13 +1,31 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
 main {
 	padding: 3.2em 0;
     padding-top: 3.2em;
     padding-right: 0px;
     padding-bottom: 3.2em;
     padding-left: 0px;
-	background: -webkit-linear-gradient(left, red , blue); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+	background: -webkit-linear-gradient(left, #000 , #323232, #000); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #000 , #323232, #000); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #000 , #323232, #000); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to right, #000 , #323232, #000); /* Standard syntax */
+}
+
+body {
+	
+}
+
+section {
+	padding: 2em 0 5em 0;
+}
+
+section.hire {
+	padding: 3.4em 0 2em 0;
+}
+
+section.contact {
+	padding: 4.8em 0 0 0;
 }
 
 #logo {
@@ -68,23 +86,47 @@ main {
   border-left: 5px solid transparent;
 }
 
-.leftsidebar-nav {
-	position: fixed;
-	background-color:#7DB4B5;
-	height:100%; 
-}
-.rightsidebar-nav {
-	position: fixed;
-	background-color:#7DB4B5;
-	height:100%;
-	width:14%;
-	right: 0px; 
-}
-
+/* Customize own headers not used in bootstrap */
 h7 {
-	color:#680148;
+	padding: 1em 0 .8em 0;
+	font-size: 43px;
+	font-family: 'Lato';
+	font-weight: 900;
+	text-transform: uppercase;
 }
 
+h7:after { content: ' '; display: block; width: 60px; padding-top: 20px; border-bottom: 3px solid rgba(0,0,0, 0.3) }
+
+h8 {
+	padding: 1em 0 .8em 0;
+	font-size: 43px;
+	font-family: 'Lato';
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h9 {
+	font-size: 33px;
+	font-family: 'Lato';
+	letter-spacing: 4px;
+}
+
+/* Contact side bar for home page */
+#leftside {
+	z-index: 9999;
+	position: fixed;
+	width: auto;
+	height: 100%;
+	top: 40%;
+	left:0;
+}
+
+/* Animation for contact side bar on home page */
+.hvr-float{display:inline-block;vertical-align:middle;-webkit-transform:translateZ(0);transform:translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}
+
+.hvr-float:active,.hvr-float:focus,.hvr-float:hover{-webkit-transform:translateY(-8px);transform:translateX(15px)}
+
+/* Animation for projects on home page */
 .grid {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -237,19 +279,6 @@ a.resize-gallery-expand {
 	background: linear-gradient(to right, #2C3E50 , #2980b9, #2C3E50 ); /* Standard syntax */
 }
 
-#leftside {
-	z-index: 9999;
-	position: fixed;
-	width: auto;
-	height: 100%;
-	top: 40%;
-	left:0;
-}
-
-.hvr-float{display:inline-block;vertical-align:middle;-webkit-transform:translateZ(0);transform:translateZ(0);box-shadow:0 0 1px rgba(0,0,0,0);-webkit-backface-visibility:hidden;backface-visibility:hidden;-moz-osx-font-smoothing:grayscale;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out}
-
-.hvr-float:active,.hvr-float:focus,.hvr-float:hover{-webkit-transform:translateY(-8px);transform:translateX(15px)}
-
 #contact a.btn.github {
 	display: inline-block;
 	border-radius: 4px;
@@ -262,6 +291,7 @@ a.resize-gallery-expand {
 	background-color: #000; color: #cccccc; 
 }
 
+/* The back to top icon */
 .scrollup {
   width: 45px;
   height: 45px;
@@ -274,6 +304,21 @@ a.resize-gallery-expand {
   background: url('arrow_up.png') no-repeat;
 }
 
+/* Customize list for "hire me" section */
 #hire ul { padding-left: 25%; list-style: none; }
 #hire ul li { max-width: 75%; margin-bottom: 12px; line-height: 1.5em; color: #000; font-size: 20px; }
 #hire ul li:before { content: '\f00c'; color: #00ff00; font-family: FontAwesome; display: inline-block; width: 40px; margin-left: -40px; }
+
+/* Side bars for project pages */
+.leftsidebar-nav {
+	position: fixed;
+	background-color:#7DB4B5;
+	height:100%; 
+}
+.rightsidebar-nav {
+	position: fixed;
+	background-color:#7DB4B5;
+	height:100%;
+	width:14%;
+	right: 0px; 
+}
