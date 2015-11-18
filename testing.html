@@ -1,0 +1,255 @@
+<html lan="en">
+	<head>
+		<!-- Reference Bootstrap -->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap/css/styles.css">	
+		<!-- Reference Font Awesome icons-->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+		<!-- Set Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- set browser tab -->
+		<title>Teams Layout</title>
+		<link href="icon.ico" rel="icon" type="image/ico">
+		<style>
+			body {
+				background: linear-gradient(to bottom right, #000 , #666666, #000); 
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<!-- Create Tabs -->
+			<div class="blog-masthead">
+				<div class="container">
+					<nav class="blog-nav" class="navbar navbar-default navbar-fixed-top">
+						<a id="logo" class="brand-logo visible-lg" href="#"><img src="images/logo.png"></a>
+						<a class="blog-nav-item" href="#">Home</a>
+						<a class="blog-nav-item" href="#projects">Leaderboard</a>
+						<a class="blog-nav-item active" href="#gallery">Team</a>
+						<a class="blog-nav-item" href="#skills">Rules</a>
+						<a class="blog-nav-item" href="#contact">Contact</a>
+					</nav>
+				</div>
+			</div>
+			<div class="hidden-sm col-md-2 col-md-offset-1">
+				<br><br><br>
+				<div id="team-sidebar">
+					<h12>Control Panel</h12>
+					<br>
+					<div class="login">
+					<div class="panel panel-default">
+					<div class="panel-heading" style="background:black;">
+						<h11><b>LOGIN</b></h11>
+					</div>
+						<br>
+						<form method="post" action="index.html">
+						<p><input type="text" name="login" value="" placeholder="Username or Email"></p>
+						<p><input type="password" name="password" value="" placeholder="Password"></p>
+						<p class="remember_me">
+							<label>
+								<input type="checkbox" name="remember_me" id="remember_me">
+								Remember me on this computer
+							</label>
+						</p>
+						<p class="submit"><input type="submit" name="commit" value="Login"></p>
+						</form>
+					</div>
+					<div class="login-help">
+						<p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-8">
+				<br><br><br>
+				<div class="jumbotron" style="height:90%">
+					<div class="container">
+						<h7>Teams</h7>
+						<br>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+							<div class="panel panel-primary">
+								<div class="panel-heading" role="tab" id="headingOne">
+									<h4 class="panel-title">
+										<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+											<h10>Professionals</h10>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+									<!-- Table -->
+									<table class="table table-striped">
+										<thead>
+											<tr>
+												<th>Team Name</th>
+												<th>Rank</th>
+												<th>Ask to Join</th>
+											</tr>
+										<thead>
+										<tbody>
+											<tr>
+												<td>CLG</td>
+												<td>1st</td>
+												<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+											<tr>
+											<tr>
+												<td>TSM</td>
+												<td>2nd</td>
+												<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+											<tr>
+											<tr>
+												<td>C9</td>
+												<td>3rd</td>
+												<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+											<tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<br>
+							<div class="panel panel-info">
+								<div class="panel-heading" role="tab" id="headingTwo">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											<h10>Graduates</h10>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<!-- Table -->
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>Team Name</th>
+													<th>Rank</th>
+													<th>Ask to Join</th>
+												</tr>
+											<thead>
+											<tbody>
+												<tr>
+													<td>CLG</td>
+													<td>1st</td>
+													<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+												<tr>
+												<tr>
+													<td>TSM</td>
+													<td>2nd</td>
+													<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+												<tr>
+												<tr>
+													<td>C9</td>
+													<td>3rd</td>
+													<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+												<tr>
+											</tbody>
+										</table>
+								</div>
+							</div>
+							<br>
+							<div class="panel panel-primary">
+								<div class="panel-heading" role="tab" id="headingThree">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											<h10>Undergraduates</h10>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+										<!-- Table -->
+										<table class="table table-striped">
+											<thead>
+												<tr>
+													<th>Team Name</th>
+													<th>Rank</th>
+													<th>Ask to Join</th>
+												</tr>
+											<thead>
+											<tbody>
+												<tr>
+													<td>CLG</td>
+													<td>1st</td>
+													<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+												<tr>
+												<tr>
+													<td>TSM</td>
+													<td>2nd</td>
+													<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+												<tr>
+												<tr>
+													<td>C9</td>
+													<td>3rd</td>
+													<td><a class="btn btn-success btn-sm" href="#" role="button">Insert Button Here</a></td>
+												<tr>
+											</tbody>
+										</table>
+								</div>
+							</div>
+							<br>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFour">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+											<h10>High School</h10>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+									<ul class="list-group">
+										<li class="list-group-item">Team one</li>
+										<li class="list-group-item">Team two</li>
+										<li class="list-group-item"> Team three</li>
+									</ul>
+								</div>
+							</div>
+							<br>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingFive">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+											<h10>Middle School</h10>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+									<ul class="list-group">
+										<li class="list-group-item">Team one</li>
+										<li class="list-group-item">Team two</li>
+										<li class="list-group-item"> Team three</li>
+									</ul>
+								</div>
+							</div>	
+							<br>
+							<div class="panel panel-default">
+								<div class="panel-heading" role="tab" id="headingSix">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+											<h10>Open</h10>
+										</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+									<ul class="list-group">
+										<li class="list-group-item">Team one</li>
+										<li class="list-group-item">Team two</li>
+										<li class="list-group-item"> Team three</li>
+									</ul>
+								</div>
+							</div>							
+						</div>
+						</center>
+					</div>
+				</div>
+			</div>
+		<!-- Load scripts at the end for faster loading -->
+		<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script>
+		   $('.blog-nav-item').click(function(){
+
+			$('a').removeClass('active');
+			$(this).addClass('active');
+		});
+		</script>
+	</body>
+</html>
+
