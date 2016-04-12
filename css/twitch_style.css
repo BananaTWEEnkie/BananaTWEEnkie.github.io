@@ -1,0 +1,148 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+a {
+	color: #9bc2cf;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a.btn.github {
+	background-color: #cccccc;
+	border-radius: 4px;
+	color: #000;
+	display: inline-block;
+	padding: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+	-webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+a.btn.github:hover { 
+	background-color: #000;
+	color: #cccccc; 
+}
+
+#application {
+	background-color: white;
+	border: 5px solid grey;
+	font-size: 18px;
+	margin: 75px 250px 100px 250px;
+	padding: 33px 75px 33px 75px;
+}
+
+#battery-1 {
+	color:red;
+	position:absolute;
+	left: 100px;
+	top: 340px;
+}
+
+#battery-2 {
+	color:yellow;
+	position:absolute;
+	left: 100px;
+	top: 450px;
+}
+
+#battery-3 {
+	color:#6fdc6f;
+	position:absolute;
+	left: 100px;
+	top: 605px;	
+}
+
+#battery-4 {
+	color:limegreen;
+	position:absolute;
+	left: 100px;
+	top: 900px;		
+}
+
+body {
+	background-color: #6441a5;
+	font-family: 'Lato', 'Helvetica Neue', Verdana, Geneva, sans-serif;
+	margin: 75px 0 0 0;
+}
+
+.center {
+	position: center;
+}
+
+/*
+	Gradient colors from w3school.com
+
+	Sticky footer from http://codepen.io/cbracco/pen/zekgx 
+*/
+
+footer {
+	position: static;
+	bottom: 0px;
+	left: 0px;
+	border-top: 2px solid black;
+	color: black;
+	padding: 25px 0 25px 0;
+	text-align: center;
+	width: 100%;
+	background: -webkit-linear-gradient(right, red , blue); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, red, blue); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, red, blue); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, grey, #CDCDCD , white, #CDCDCD, grey); /* Standard syntax */
+}
+
+img.big {
+    transition: -webkit-transform 0.25s ease;
+}
+
+img.big:hover {
+    -webkit-transform: scale(2);
+}
+
+.indent {
+	text-indent: 50px;
+}
+
+nav {
+	position: absolute;
+	top: 17.5%;
+	left: 15%;
+}
+
+.no-line:hover {
+	text-decoration: none;
+}
+
+#right {
+	float: left;
+	width: 48%;
+}
+
+#left {
+	float: left;
+	width: 48%;
+}
+
+.social-icons {
+	margin: 10px;
+	text-decoration: none;
+	-webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.social-icons:hover {
+	color: #566c73;
+	text-decoration: none;
+}
+
+.tooltip {
+	display:inline !important;
+	font-size: 9px !important;
+}
+
+.title {
+	color: white;
+	position:absolute;
+	left:50%;	transform: translate(-50%,-50%);
+}
