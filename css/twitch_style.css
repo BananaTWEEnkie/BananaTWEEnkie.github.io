@@ -44,21 +44,21 @@ a.btn.github:hover {
 	color:yellow;
 	position:absolute;
 	left: 100px;
-	top: 460px;
+	top: 475px;
 }
 
 #battery-3 {
 	color:#6fdc6f;
 	position:absolute;
 	left: 100px;
-	top: 560px;	
+	top: 575px;	
 }
 
 #battery-4 {
 	color:limegreen;
 	position:absolute;
 	left: 100px;
-	top: 790px;		
+	top: 810px;		
 }
 
 body {
