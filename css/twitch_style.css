@@ -33,32 +33,12 @@ a.btn.github:hover {
 	padding: 33px 75px 33px 75px;
 }
 
-#battery-1 {
-	color:red;
-	position:absolute;
-	left: 100px;
-	top: 340px;
+.asterisk {
+	font-size: 9px !important;
 }
 
-#battery-2 {
-	color:yellow;
-	position:absolute;
-	left: 100px;
-	top: 488px;
-}
-
-#battery-3 {
-	color:#6fdc6f;
-	position:absolute;
-	left: 100px;
-	top: 595px;	
-}
-
-#battery-4 {
-	color:limegreen;
-	position:absolute;
-	left: 100px;
-	top: 788px;		
+#battery-turbo {
+	color:limegreen;	
 }
 
 body {
@@ -114,16 +94,6 @@ nav {
 	text-decoration: none;
 }
 
-#right {
-	float: left;
-	width: 48%;
-}
-
-#left {
-	float: left;
-	width: 48%;
-}
-
 .social-icons {
 	margin: 10px;
 	text-decoration: none;
@@ -137,12 +107,39 @@ nav {
 }
 
 .tooltip {
-	display:inline !important;
-	font-size: 9px !important;
+	position: relative;
+    display: inline-block;
 }
 
 .title {
 	color: white;
 	position:absolute;
 	left:50%;	transform: translate(-50%,-50%);
+}
+
+
+/*
+
+Assistance from: http://www.w3schools.com/css/css_tooltip.asp
+
+*/
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+	
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
