@@ -9,21 +9,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- set browser tab -->
 		<title>Your next intern</title>
-		<!--<link href="icon.ico" rel="icon" type="image/ico">-->
+		<link href="icon.ico" rel="icon" type="image/ico">
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 		<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
-		<script>
-			$(function () {
-			   $("#senior").tooltip({
-				   content: '<img src="images/gamer_granny.jpg" style="height:180px; width:300px;" />'
-			   });
-			   
-			   $("#brief").tooltip({
-				   content: '<img src="https://df2iqnjv15ch4.cloudfront.net/spree/products/840/large/boxerbrief-darksaphire-lowres_1403552847.jpg?1403552847" style="height: 179px; wdith: 300px;" />'
-			   });
-			});
-		</script>
+		<script src="js/twitch.js"></script>
 	</head>
 	<body>
 		<header>
@@ -51,16 +41,14 @@
 			<section id="documents">
 				<center>
 					<p>
-						<div>
-							<a href="Resume.pdf" class="no-line">
-								<b>My Resume</b>&nbsp;
-								<i class="fa fa-file-pdf-o fa-lg" style="color:red"></i>
-							</a>
-						</div>
+						<a href="Resume.pdf" class="no-line">
+							<b>My Resume</b>&nbsp;
+							<i class="fa fa-file-pdf-o fa-lg" style="color:red"></i>
+						</a>
 					</p>
 				</center>
 			</section>
-			<br/><br/>
+			<br/>
 			<section id="code-samples">
 				<center>
 					<p>
@@ -114,7 +102,8 @@
 							<span class="tooltiptext">North America Collegiate Championship</span>
 						</div> West, essentially placing in the top 20 of North America.
 						<br/><br/>
-						I am an advocate for Collegiate Esports and hope for Universities to recognize the competitive gaming clubs formed in order to establish scholarship opportunities. My plan includes creating an academic research paper about esports and having it publish for publicity. This way, esports will be taken more seriously and help spread awareness all across the country.
+						Currently, I am an advocate for Collegiate Esports. My hope is to have the competitive gaming clubs like ours become recognized by universities to help establish helpful scholarship opportunities. My plan to help facilitate this goal includes drafting an academic research paper about Esports and submitting it to publishers for increased public awareness and student interest. As a result, the Esports community will be taken more seriously and acknowledgement will increase not only throughout our school, but perhaps all across the country.
+
 					</dd>
 					<br/>
 					<li>I love to draw.</li>

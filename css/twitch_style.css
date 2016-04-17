@@ -94,6 +94,19 @@ nav {
 	text-decoration: none;
 }
 
+/* The back to top icon */
+.scrollup {
+  width: 45px;
+  height: 45px;
+  opacity: 0.6;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+  text-indent: -9999px;
+  background: url('arrow_up.png') no-repeat;
+}
+
 .social-icons {
 	margin: 10px;
 	text-decoration: none;
