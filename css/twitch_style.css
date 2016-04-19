@@ -29,8 +29,9 @@ a.btn.github:hover {
 	background-color: white;
 	border: 5px solid grey;
 	font-size: 18px;
-	margin: 75px 250px 100px 250px;
-	padding: 33px 75px 33px 75px;
+	margin: 5% 10% 5% 10%;
+	padding: 5%;
+	min-width: 250px;
 }
 
 .asterisk {
