@@ -20,7 +20,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.75em;
-  transition: background-color 2s ease; }
+  transition: background-color 2s ease, color 2s ease; }
 
 button {
   background-color: #4c4c4c;
@@ -163,9 +163,8 @@ Assistance from: http://www.w3schools.com/css/css_tooltip.asp
   width: 120px;
   background-color: black;
   color: #fff;
-  text-align: center;
   border-radius: 6px;
-  padding: 5px 0;
+  padding: 5px 0 0 10px;
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
