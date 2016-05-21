@@ -5,8 +5,8 @@
 	<title>Thuy-Tien Nguyen-Tran</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" media="all">	
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:200|Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Montserrat:400,700' rel='stylesheet' type='text/css'>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -17,14 +17,8 @@
 					<nav>
 						<ul>
 							<li><b><u>Menu</u></b></li>
-							<li>
-								<a href="index.html" class="link">Home</a>
-							</li>
-							<li>
-								<a href="projects.html" class="link">Projects</a>
-							</li>
-							<li>
-								<a href="pictures.html">Adventures</a>
+							<li style="padding-top: 15px">
+								<a href="main.html" class="link">Profile</a>
 							</li>
 						</ul>
 					</nav>
@@ -33,20 +27,20 @@
 					<center>
 					<h1 id="greeting">Hi<strong>&#10084;</strong></h1> <br><h2>My name is Thuy</h2>
 					<div id="box">
-							<h3>DEVELOPER <strong>&</strong> ESPORTS ENTHUSIAST</h3>
+						<h3>DEVELOPER <strong>&</strong> ESPORTS ENTHUSIAST</h3>
 						</center>
 						<p>
 							Currently a <strong>senior</strong> at <a target="_blank" href="http://www.cpp.edu/">California State Polytechnic University, Pomona</a> studying
 							<span class="tooltip">
 								CIS<sup><i class="fa fa-asterisk asterisk"></i></sup>.
-								<span class="tooltiptext">Computer Information System</span>
+								<span class="tooltiptext"><b>C</b>omputer <b>I</b>nformation <b>S</b>ystem</span>
 							</span>
-							<br/>Active in the <a target="_blank" href="http://www.cppgamedev.com/">Game Design<b>&</b>Development</a>,
-											   <a target="_blank" href="https://www.facebook.com/groups/CPPESPORTS/">ESports club</a>, and
+							<br/>Active in the <a target="_blank" href="http://www.cppgamedev.com/">Game Design<b>&</b>Development</a> (<b>Fundraising Chair</b>),
+											   <a target="_blank" href="https://www.facebook.com/groups/CPPESPORTS/">ESports club</a> (<b>Treasurer</b>), and
 											   <span class="tooltip">
-													<a target="_blank" href="https://www.facebook.com/groups/CPPESPORTS/">IWSDA</a><sup><i class="fa fa-asterisk asterisk"></i></sup>.
-													<span class="tooltiptext">Interactive Web Development Student Association</span>
-												</span>
+													<a target="_blank" href="https://twitter.com/calpolyiwdsa">IWSDA</a><sup><i class="fa fa-asterisk asterisk"></i></sup>
+													<span class="tooltiptext"><b>I</b>nteractive <b>W</b>eb <b>D</b>evelopment <b>S</b>tudent <b>A</b>ssociation</span>
+												</span> (<b>Member</b>).
 							<br/>I love drawing, coding, bowling, and gaming.
 							<br/>Take a look at my <a target="_blank" href="Resume.pdf">resume</a>.
 						</p>
@@ -79,13 +73,5 @@
 			integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
 			crossorigin="anonymous"></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
-	<script>
-	$(document).ready(function() {
-	$("nav li a").click(function() {
-		$("link").attr("href",$(this).attr('rel'));
-		return false;
-	});
-});
-	</script>
 </body>
 </html>

@@ -20,6 +20,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.75em;
+  -webkit-transition: background-color 2s ease, color 2s ease;
+  /* Safari */
   transition: background-color 2s ease, color 2s ease; }
 
 button {
@@ -46,6 +48,10 @@ button {
     -webkit-transition: background-color 0.5s;
     /* Safari */
     transition: background-color 0.5s; }
+
+.clicked3 {
+  background-color: white;
+  color: black; }
 
 div#about-me {
   font-family: "Roboto", sans-serif; }
@@ -160,7 +166,7 @@ Assistance from: http://www.w3schools.com/css/css_tooltip.asp
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 130px;
   background-color: black;
   color: #fff;
   border-radius: 6px;
