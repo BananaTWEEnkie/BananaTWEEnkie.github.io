@@ -23,7 +23,7 @@ $(document).ready(function () {
 		});
 	});
 	$('.popup').on('mouseleave', function() {
-		$('.image-popup').fadeIn()
+		$('.image-popup').fadeOut()
 		.css({bottom:-1850,position:'absolute'})
 		.animate({bottom:-2325}, 500, function() {
 			//callback
