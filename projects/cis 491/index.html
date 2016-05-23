@@ -1,0 +1,70 @@
+<!-- Practicing neat coding&commenting!
+	  Feel free to give tips, thanks <3 -->
+
+<!DOCTYPE html>
+<!-- Set language -->
+<html lang="en">
+<head>
+	<!-- Set browser tab -->
+	<title>CIS 491 - MENT &hearts;</title>
+	<link href="images/lock-icon.png" rel="icon" type="images/ico">
+	<!-- Set meta. Specifies the character encoding for the HTML document
+		  The more widely a character encoding is used, the better
+		  chance the browser will understand it.
+		  UTF = Unicode transformation format -->
+	<meta charset="utf-8" />
+	<!-- Configure viewport to better display web content on all browsers -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Import css -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!-- Import bootstrap icons-->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" media="all">	
+	<!-- Import google font -->
+	<link href='https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans|Roboto' rel='stylesheet' type='text/css'>
+	<!-- Import starting javascript files -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+	<!-- Start of landing page -->
+	<section id="landing-page">
+		<div id="intro">
+			<h1>Chapter 6: HTML5 Securities</h1>
+			<strong>Matthew Sprengal, Nancy Dam, Thuy-Tien Nguyen-Tran, Eddy Ruiz</strong>
+		</div>
+	</section>
+	<!-- End landing page -->
+	<header>
+		<nav id="navbar">
+			<ul class="nav">
+				<li>
+					<a href="#landing-page">Home</a>
+				</li>
+				<li>
+					<a href="#main">Main</a>
+				<li>
+			</ul>
+		</nav>
+	</header>
+	<section id="main">
+		<div id="content">
+			<!-- Create canvas to display -->
+			<center><h2>Canvas</h2></center>
+			<canvas id="myCanvas" width="480" height="320"></canvas>
+			<br />
+		</div>
+		<div id="content">
+			<center><h2>iframe &#9825;</h2></center>
+			<br />
+			<!-- Create an iframe to attack and create video -->
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/I1XQduS6IfA" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</section>
+	<section id="scrollup">
+			<a href="#" class="scrollup"><i class="fa fa-arrow-up fa-3x"></i></a>
+	</section>
+
+	<!-- Import custom scripts at bottom for faster loading.
+		  It's important to have faster loading times nowadays. -->
+	<script src="js/main.js"></script>
+</body>
+</html>

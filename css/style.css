@@ -136,7 +136,7 @@ h12 {
 	font-family: Inherit;
 }
 
-h12:after { content: ' '; display: block; width: 60px; padding-top: 20px; border-bottom: 3px solid rgba(0,0,0, 0.3) }
+h12:after { content: ' '; display: block; width: 60px; padding-top: 20px; border-bottom: 3px solid rgba(0,0,0, 0.3)}
 
 /* Contact side bar for home page */
 #leftside {
