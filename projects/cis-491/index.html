@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
 	<!-- Set browser tab -->
-	<title>CIS 491 - MENT &hearts;</title>
+	<title>CIS 491 - TMNT &hearts;</title>
 	<link href="images/lock-icon.png" rel="icon" type="images/ico">
 	<!-- Set meta. Specifies the character encoding for the HTML document
 		  The more widely a character encoding is used, the better
@@ -23,48 +23,84 @@
 	<link href='https://fonts.googleapis.com/css?family=Oswald:700|Open+Sans|Roboto' rel='stylesheet' type='text/css'>
 	<!-- Import starting javascript files -->
 	<script src="js/jquery-2.2.4.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
 </head>
+<!-- Add all asp.net code here -->
 <body>
 	<!-- Start of landing page -->
 	<section id="landing-page">
 		<div id="intro">
 			<h1>Chapter 6: HTML5 Securities</h1>
 			<strong>Matthew Sprengal, Nancy Dam, Thuy-Tien Nguyen-Tran, Eddy Ruiz</strong>
+			<br /><br />
+			<font style="color: darkgreen"><i>We fight crime, we are..</i>
+				<br/>
+				<a id="tmnt" title="" class="tooltip"><strong>TEENAGE MUTANT NINJA TURTLES<strong></a>
+			</font>
 		</div>
 	</section>
 	<!-- End landing page -->
 	<header>
+		<div id="slideout">
+			<button id="slideout-menu">Menu</button>
+			<div id="slideout_inner">
+				<div class="slideout-content">
+					<a href="#landing-page">Home</a>
+					<a href="#canvas">Canvas</a>
+					<a href="#iframe">iframe</a>
+				</div>
+			</div>
+		</div>
 		<nav id="navbar">
 			<ul class="nav">
 				<li>
 					<a href="#landing-page">Home</a>
 				</li>
 				<li>
-					<a href="#main">Main</a>
+					<a href="#canvas">Canvas</a>
+				</li>
 				<li>
+					<a href="#iframe">iframe</a>
+				</li>
 			</ul>
 		</nav>
 	</header>
 	<section id="main">
-		<div id="content">
+		<div id="canvas" class="animation-element content slide-left">
 			<!-- Create canvas to display -->
 			<center><h2>Canvas</h2></center>
 			<canvas id="myCanvas" width="480" height="320"></canvas>
 			<br />
+			<button type="button" onclick="play()">Would you like to play a game?</button>
+			<br />
 		</div>
-		<div id="content">
+		<div id="iframe" class="animation-element content slide-left">
 			<center><h2>iframe &#9825;</h2></center>
 			<br />
 			<!-- Create an iframe to attack and create video -->
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/I1XQduS6IfA" frameborder="0" allowfullscreen></iframe>
 		</div>
+		<div id="book" class="animation-element content slide-left">
+			<center><h2>Book</h2></center>
+			<br />
+			Our book is sexist
+			<br /><br />
+			<img src="images/book.png" />
+		</div>
 	</section>
-	<section id="scrollup">
-			<a href="#" class="scrollup"><i class="fa fa-arrow-up fa-3x"></i></a>
+	<section id="end">
+		<div id="hwang">
+			<img src="images/hwang.jpg" class="image-popup" />
+			<br />
+			<button class="popup">Who's that?</button>
+		</div>
+		<a href="#" class="scrollup"><i class="fa fa-arrow-up fa-3x"></i></a>
 	</section>
 
 	<!-- Import custom scripts at bottom for faster loading.
 		  It's important to have faster loading times nowadays. -->
 	<script src="js/main.js"></script>
+	<script src="js/canvas-game.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
 </body>
 </html>
