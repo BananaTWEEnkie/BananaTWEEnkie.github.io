@@ -213,6 +213,7 @@ document.addEventListener("keydown", keyDownHandler, false);
 document.addEventListener("keyup", keyUpHandler, false);
 
 function play() {
+	document.getElementById("playButton").style.visibility = "hidden";
 	// setInterval(function, milliseconds)
 	id = setInterval(draw, 10); // replace with requestAnimationFrame(draw) at end of draw function, then call draw() instead of setInterval for better response
 }

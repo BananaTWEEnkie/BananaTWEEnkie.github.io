@@ -54,8 +54,20 @@ $(function () {
 	   content: '<img src="images/tmnt.jpg" style="height:180px; width:300px;" />'
    });
    
-   $("#brief").tooltip({
-	   content: '<img src="https://df2iqnjv15ch4.cloudfront.net/spree/products/840/large/boxerbrief-darksaphire-lowres_1403552847.jpg?1403552847" style="height: 179px; wdith: 300px;" />'
+   $("#matt").tooltip({
+	   content: '<img src="images/matt.jpg" style="height: 300px;" />'
+   });
+	
+	 $("#nancy").tooltip({
+	   content: '<img src="images/nancy.jpg" style="height: 300px;" />'
+   });
+	
+	$("#thuy").tooltip({
+	   content: '<img src="images/thuy.jpg" style="height: 300px;" />'
+   });
+	
+	$("#eddy").tooltip({
+	   content: '<img src="images/eddy.jpg" style="height: 200px;" />'
    });
 });
 
