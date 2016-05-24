@@ -55,7 +55,7 @@ $(function () {
    });
    
    $("#matt").tooltip({
-	   content: '<img src="images/matt.jpg" style="height: 300px;" />'
+	   content: '<img src="images/matt.jpg" style="height: 290px;" />'
    });
 	
 	 $("#nancy").tooltip({
