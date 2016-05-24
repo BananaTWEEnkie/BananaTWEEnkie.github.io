@@ -67,7 +67,7 @@ $(function () {
    });
 	
 	$("#eddy").tooltip({
-	   content: '<img src="images/eddy.jpg" style="height: 200px;" />'
+	   content: '<img src="images/eddy.jpg" style="height: 300px;" />'
    });
 });
 
