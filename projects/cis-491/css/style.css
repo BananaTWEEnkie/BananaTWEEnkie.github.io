@@ -199,7 +199,7 @@ canvas {
 .content {
 	background-color: #f8f8f9;
 	height: 75%;
-	width: 65%;
+	width: 60%;
 	margin: 25px auto 25px auto;
 	padding:  25px 25px 50px 25px;
 	text-align: center;
@@ -273,21 +273,30 @@ h2:after { content: ' '; display: block; width: 60px; padding-top: 20px; border-
 **/
 
 .popup {
-	background-color: black;
+	background-color: red;
 	border-radius: 5px 5px 0 0;
 	border: none;
 	color: white;
 	cursor: pointer;
 	position: absolute;
 	left: 260px;
+	bottom: 0;
 	padding: 10px;
 }
 
 .image-popup {
 	display: none;
 	position: absolute;
-	bottom: -1850px;
+	bottom: 0px;
 	left: 5px;
+}
+
+#hwang {
+	position: absolute;
+	bottom: -2200px;
+	height: 500px;
+	width: 400px;
+	overflow:hidden;
 }
 
 /**
