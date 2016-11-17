@@ -1,0 +1,156 @@
+<?php
+
+	require_once('database.php');
+
+	session_start();
+	
+	
+	
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CTF Questions</title>
+	<link href="images/globe.png" rel="icon" type="images/ico">
+	<link href="https://fonts.googleapis.com/css?family=Aldrich|Bungee+Hairline|Chathura|Orbitron" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header>
+		<nav id="nav-bar">
+		  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a id="nav-title" class="navbar-brand" href="#">CTF</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="home.html" class="nav-link">Home<span class="sr-only">(current)</span></a></li>
+						<li class=""><a href="index.html" class="nav-link">About</a></li>
+						<!--<li class="dropdown">
+							<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Separated link</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+			</div>		
+				<!-- <a href="#"><i class="fa fa-home fa-2x" aria-hidden="true" id="home-page-icon"></i></a> -->
+				<button type="button" id="register"><a href="#" class="button">Register</a></button>
+				<button type="button" id="login" class="Login"><a href="#" class="button">Login</a></button>
+		</nav>
+	</header>
+	<center>
+		<h1>Facebook: Capture The Flag</h1>
+		<h2>Question Submission</h2>
+	</center>
+	<div id="rules" class="ctf-container">
+		<h2>Explaination</h2>
+		<p>
+		<strong>Welcome!</strong> Here you can submit questions and answers to contribute to the testbank that will aid others in Facebook CTF.
+		</p>
+		<p>1. Type your questions and answers.</p>
+		<p>2. Supply hints to assist players that are struggling.</p>
+		<p>3. Upload files with the necessary components.</p>
+		<p>4. List the necessary steps in order to fully complete the answers.</p>
+		<p>5. Finally, choose the difficulty and categories appropriate for the question.</p>
+	</div>
+	<div id="form" class="ctf-container">
+		<form action="input.php" method="POST">
+			<label>Question</label><br/>
+			<input type="text" id="question" name="ctf-question" class="long-input" placeholder="What is CTF?">
+			<br/><br/>
+			<label>Answer</label><br/>
+			<input type="text" id="answer" name="ctf-answer" class="long-input" placeholder="Capture the flag">
+			<br/><br/>
+			<label>Hint</label><br/>
+			<input type="text" id="hint" name="ctf-hint" class="long-input" placeholder="a type of game">
+			<br/><br/>
+			<form action="" method="POST" enctype="multipart/form-data">
+				<label>Link</label><br/>
+				<input type="file" name="fileUpload">
+				<!-- <br/>
+				<label>Link</label><br/>
+				<input type="text" id="" name="" class="input" placeholder="http://mylink.com">
+				<input type="submit" id="upload-button" value="Upload" name="submit"> -->
+			</form>
+			<br/>
+			<label>Solution Process</label><br/>
+			<textarea type="text" id="steps" name="ctf-steps" placeholder="1. type examples here&#10;2. continue..&#10;3. continue more.."></textarea>
+			<br/><br/>
+			<label>Difficulty</label>
+			<br/>
+			<select style="background-color: black;">
+				<option value="easy">Easy</option>
+				<option value="medium">Medium</option>
+				<option value="hard">Hard</option> 
+			</select>
+			<br/><br/>
+			<label>Categories</label>
+			<br/>
+			<select style="background-color: black;">
+				<option value="one">Selection 1</option>
+				<option value="two">Selection 2</option>
+				<option value="three">Selection 3</option> 
+			</select>
+			<br/><br/>
+			<center><input type="submit" id="submit-button" value="Submit"></center>
+		</form>
+	</div>
+	
+	<div id="black_overlay" style="width: 100%;"> </div>
+
+	<div class="added">
+		<img src="images/close-icon.png" width="20" height="20" class="close">
+		<h2>Login</h2>
+		<br/><br/>
+		<label>Username</label>
+		<input type="text" placeholder="" style="color: black;">
+		<br/><br/>
+		<label>Password</label>
+		<input type="text" style="color: black;">
+		<br/><br/>
+		<input type="submit" id="submit-button" value="Login" style="color: black;">
+	</div>
+	
+	<footer id="footer">
+		<center><i class="fa fa-copyright" aria-hidden="true"></i> 2016 Computer Information Systems</center>
+	</footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+  $(".Login").click(function() {
+     var h = $("body").height() + 'px';
+     $("#black_overlay").css({"height":h,"visibility":"visible"});
+     $(".added").css('display','block');
+  });
+ 
+  $(".close").click(function() {
+     $(".added").css('display','none');
+     $("#black_overlay").css("visibility","hidden");
+  });
+});
+	</script>
+</body>
+</html>

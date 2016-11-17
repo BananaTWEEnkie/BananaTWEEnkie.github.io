@@ -1,0 +1,375 @@
+
+/*Navigation layout*/
+.navbar {
+    width: 100%;
+    margin-left: auto;
+	margin-right: auto;
+	background-color: #0358B2;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.2vmin;	
+	
+}
+
+.navbar-toggle .icon-bar{ 
+background-color: yellow;
+} 
+
+
+.dropdown-menu {
+	font-size: 2.2vmin;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.nav-pills {
+	padding-top:10px;
+	display:inline-block;
+}
+
+a {
+    color: white;  
+}
+
+.logo {
+	max-width:150px;
+	max-height:100px;
+	display: inline-block;
+	float:left;
+}
+
+
+
+
+/*General body layout*/
+body {
+	
+    background-color: #0A96B1;
+    height: 100%;
+    width: 100%;
+}
+section {
+    background-color: rgba(10, 150, 177, 1);
+    height: 100%;
+    width: 100%;
+    position: center;
+    color: white;
+	font-family: 'Lato', sans-serif;
+	
+}
+
+
+div.container {
+    height: 100%;
+    width: 100%;    
+}
+div.col-lg-12 {
+    text-align: center;
+}
+
+h1 {
+	padding-top: 1%;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 4.5vw;
+	text-shadow: 2px 2px #000000;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight:bold;
+	font-size: 1.6vw;
+}
+
+
+/*Individual sections and containers*/
+
+/*Home Section*/
+#home {
+	margin-bottom:-4%;
+	background-image:url(SampleAboutBackground4.png);`
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	padding: 10%;
+	
+}
+
+
+
+.homeH1 {
+	margin-bottom: -3px;
+}
+
+#homeDiv {
+	background-color: rgba(100, 109, 205, 0.6);
+	width: 70%;
+	height: 70%;
+	-moz-border-radius: 5%;
+	-webkit-border-radius: 5%;
+	border-radius: 5%;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.5vmin;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+	padding: 1%;
+}
+
+#homeDiv:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
+}
+
+.aboutContent{
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5vw;
+	margin-left: 100px;
+	margin-right: 100px;
+	
+}
+
+/*Mission Statement Section*/
+
+#MissionStatement {
+	
+	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 40%;
+}
+	
+ #missionH1 {
+	margin-bottom: -3px;
+}
+
+
+
+
+
+#missionDiv {
+	padding-top: -30%;
+	background-color: rgba(100, 109, 205, 0.6);
+	width: 80%;
+	color: black;
+	margin:auto;
+	box-shadow:0 5px 9px 0 rgba(0, 0, 0, 0.4);
+	font-size: 1.8vw;
+	color: white;
+}
+
+blockquote {
+	
+}
+
+/*Who we are section*/
+
+#WhoWeAre {
+	height: 100%;
+	background-color: navy;
+	background-size: cover;
+}
+
+.imgEmployee {
+	width: 50%;
+	align: center;
+	-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+	
+}
+
+
+/*FAQ Section*/
+#FAQ{
+	
+	height: 100%;
+/* 	background-image: url(SampleFaqBg.png);
+	background-size: cover; */
+	padding-left: -2%;
+}
+
+
+
+
+
+#faqContent {
+
+}
+
+#aboutcontent {
+    text-align: center;
+    padding-top: 0px;
+	
+}
+
+.panel {
+	background-color:white;
+	box-shadow: 0 5px 9px 0 rgba(255, 255, 255, 0.3);
+}
+
+.panel:hover {
+	box-shadow: 0 5px 9px 0 rgba(255, 255, 255, 0.5);
+	background-color: #678F99;
+	transition-duration: 0.5s;
+}
+
+.panel-custom{
+	color: white;
+	background-color: blue;
+}
+
+.panel-body {
+	color: white;
+	text-align: left;
+	font-size: 2.4vmin;
+	background-color:black;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.panel-body:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.6);
+	font-size: 2vmin;
+}
+
+.panel-title {
+	text-align:left;
+	font-size: 2.4vmin;
+	
+	
+}
+
+/*Contributors section*/
+#Contributors {
+	border-color: yellow;
+	border-style: double;
+	border-width:5px;
+	margin: auto;
+
+	background-size: cover;
+}
+/*Sponsors section*/
+#Sponsors{
+	border-color: yellow;
+	border-style: double;
+	border-width: 5px;
+    margin: auto;
+	height: 70%;
+
+	background-size: cover;
+}
+
+
+
+/*Set sponsor image sizes*/
+.sponsorImg {
+	max-width: 45%;
+	max-height: auto;
+}
+
+
+
+
+
+
+/* #positionsDiv {
+	background-color: #E3D025;
+}
+ */
+
+
+
+/*Volunteering Page*/
+#Volunteering{
+	background-image: url("SampleVolunteerBg.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin-top: -2%;
+}
+
+#volunteerDiv {
+	background-color : rgba(100, 109, 205, 0.6);
+	width: 75%;
+	height: 75%;
+	margin: auto;
+	font-size: 2.0vmin;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
+}
+
+#volunteerDiv:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
+}
+
+/*Settings for Open positions*/
+#OpenPositions{
+	height: 100%;
+	
+}
+/*Card settings for employees and open positions */
+.Card {
+	box-shadow:  0 4px 7px 0 rgba(0, 0, 0, 0.2);
+	background-color: rgba(100, 109, 205, 0.6);
+	transition: 0.3s;
+	margin: 10px;
+	border: 1px solid black;
+	font-size: 2.0vmin;
+}
+
+
+.Card:hover {
+	box-shadow:  0 4px 7px 0 rgba(0, 0, 0, 0.8);
+	background-color: light-blue;
+}
+
+.midCol {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+
+}
+
+
+.cardContainer {
+	width: 20%;
+	height: 25%;
+	padding-top: 2%;
+}
+
+.imgPosition {
+	border: 1px solid black;
+	margin-top: 5px;
+}
+
+.cardContent {
+	font-size: 2vmin;
+}
+
+
+
+/*Footer layout*/
+footer {
+	margin:auto;
+	text-align: center;
+	font-size: 2vmin;
+	font-family: 'Lato', sans-serif;
+    color: white;
+    height: 30%;
+    width: 100%;
+    background-color: #030CB2;
+    padding: 15px;
+   margin-top: -2%;
+}
+
+.footerH4 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: bold;
+	margin-bottom: -1%;
+	
+}
+
+.socialMediaBtn {
+	max-width: 42px;
+	max-height: 42px;
+}
+
