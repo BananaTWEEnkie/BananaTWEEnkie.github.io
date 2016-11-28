@@ -1,15 +1,16 @@
- <head>
+<!-- All Pages benefit from assistance and instruction of Jason Pittman -->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Cal Poly Pomona Student Datacenter</title>
+    <title>Home</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-	 <link href="css/normalize.css" rel="stylesheet">
 
     <!--JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -39,61 +40,161 @@
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/WireFrame.css" />
+    <link rel="stylesheet" type="text/css" href="WireFrame.css" />
 	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+
     
 </head>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+<body>
+    <header>fn Solutions</header>
+    <br />
+    <nav class="navbar  navbar-fixed-top">
+            <div id="navbar" >
+                <ul class="nav nav-pills">
+                    <li>
+                        <button onclick="dropMenu()"<a href="#home" class="page-scroll">Home</a> </button>
+						<div id = "drop" class = "ddHome">
+					
+						<a href = "#about"> About </a>
+						</div>
+                    </li>
+                    <li>
+                       <button onclick = "dropMenu()" ><a href="contribute.html" class="page-scroll">Contribute</a>
+						</button>
+						<div id = "drop" class = "ddContribute">
+						
+						<a href = "Contribute.html#Volunteering"> Volunteering </a>
+						<a href = "Contribute.html#OpenPositions"> Open Positions </a>
+						
+						</div>
+					
+                    </li>
+                    <li>
+                       <button onclick = "dropMenu()"> <a href="SDCPortfolio.html" class="page-scroll">SDC Portfolio</a> </button>
+					   
+					   <div id = "drop" class = "ddPortfolio">
+					   <a href = "SDCPortfolio.html#Volunteering"> Volunteering </a>
+						<a href = "SDCPortfolio.html#OpenPositions"> Open Positions </a>
+					   </div>
+						
+                    </li>
+                    <li>
+                        <a href="#serviceStatus" class="page-scroll">Service Status</a>
+                    </li>
+                    <li>
+                        <a href="#contactPage" class="page-scroll">Contact Page</a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+    </nav>
+    <section id="home" class="tmw-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"><h1>Welcome to the Student-run Datacenter</h1></div>
+                <p>Thank you for coming!</p>
+                <div>
+                    <h3>Introduction:</h3>
+                </div>
+                <div>
+                    <h3>Mission Statement:</h3>
+                </div>
+            </div>
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+    </section>
+    <section id="contribute" class="tmw-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contribute!</h1>
+                    <div>
+                        <h3>Volunteering:</h3>
+                    </div>
+                    <div>
+                        <h3>Open Positions:</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="SDCPortfolio" class="tmw-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                <h1>SDC Portfolio</h1>
+                    <div>
+                        <h3>Current Projects:</h3>
+                    </div>
+                    <div>
+                        <h3>Successful Projects:</h3>
+                    </div>
+                    <div>
+                        <h3>Testimonials:</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="serviceStatus" class="tmw-section">
+        <div class="container">
+            <div class="row">
+                <div id="aboutdiv" class="col-lg-12">
+                    <h1>Service Status</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contactPage" class="tmw-section">
+        <div class="container">
+            <div class="row">
+                <div id="aboutdiv" class="col-lg-12">
+                    <h1>Contact Page</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br />
+    <footer>fn Solutions©</footer>
+    <script>
+        //Code from Jason Pittman
+        //modules are containers for angular artifacts
+        //bound to the view through ng-app=""
+        angular.module('guessTheNumber', [])
+        .controller('GuessTheNumberController', GuessTheNumberController); //register the controller as an artifact
+        
+        //controller definition
+        function GuessTheNumberController($scope) {
+            //controll method 1
+            $scope.verifyGuess = function () {
+                $scope.verification = $scope.guess - $scope.randomNumber;
+                $scope.numOfGuesses++;
+            }
+            //controller method 2
+            $scope.startGame = function () {
+                $scope.randomNumber = Math.floor((Math.random() * 5000) + 500); //get a random number 500-5000
+                $scope.guess = null;
+                $scope.verification = null;
+                $scope.numOfGuesses = 0;
+            }
+            //execute the startGame method when the angular app loads
+            $scope.startGame();
+        }
+
+        //from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+
+    </script>
+</body>
+</html>
