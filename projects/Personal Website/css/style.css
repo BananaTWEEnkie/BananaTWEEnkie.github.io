@@ -1,0 +1,26 @@
+/*~*
+ *		Author: Thuy-Tien Nguyen-Tran
+ *		Description: 
+*~*/
+
+/* 
+ *		Initial settings
+ */
+ 
+body {
+	font-size: 1.75rem !important;
+	font-family: 'Roboto', sans-serif !important;
+ }
+ 
+ #instagram {
+	 
+ }
+ 
+ #about {
+	 margin: 0 25% 0 25%;
+	 text-align: left;
+ }
+ 
+ td { 
+	vertical-align: top; 
+}
