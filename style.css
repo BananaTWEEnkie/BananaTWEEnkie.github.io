@@ -67,29 +67,6 @@ div#container {
   height: 100%;
   margin: 0px auto;
   padding: 50px 25px 50px 25px; }
-  #content:before, #content:after, #content > :first-child:before, #content > :first-child:after {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    border-style: solid;
-    /* or whatever style */
-    content: ' '; }
-  #content:before {
-    top: 0;
-    left: 0;
-    border-width: 10px 0 0 10px; }
-  #content:after {
-    top: 0;
-    right: 0;
-    border-width: 0; }
-  #content > :first-child:before {
-    bottom: 0;
-    right: 0;
-    border-width: 0 10px 10px 0; }
-  #content > :first-child:after {
-    bottom: 0;
-    left: 0;
-    border-width: 0; }
 
 footer {
   margin: 0px auto;
