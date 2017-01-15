@@ -1,26 +1,139 @@
 /*~*
  *		Author: Thuy-Tien Nguyen-Tran
- *		Description: 
+ *		Description: For styling my personal webpage
 *~*/
 
 /* 
  *		Initial settings
  */
+
+a {
+	color: #6441a5;
+	text-shadow: 0 -15px 1px transparent, 0 15px 1px transparent;
+}
+ 
+a:hover {
+	color: #c5b6e2;
+	text-decoration: none;
+	text-shadow: 0 0 1px #c5b6e2, 0 0 1px #c5b6e2;
+	transition: all .4s linear 0s;
+}
+
+#about {
+	font-size:1.1em;
+}
+
+.asterisk {
+  font-size: 0.75em !important; }
  
 body {
-	font-size: 1.75rem !important;
-	font-family: 'Roboto', sans-serif !important;
- }
+   font-size: 1.6rem !important;
+	font-family: 'Roboto', sans-serif;
+	margin: 5px;
+	  -webkit-transition: background-color 2s ease, color 2s ease;
+  /* Safari */
+  transition: background-color 2s ease, color 2s ease;
+}
  
- #instagram {
+button {
+  background-color: #4c4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px; }
+  button:hover {
+    background-color: black;
+    -webkit-transition: background-color 0.5s;
+    /* Safari */
+    transition: background-color 0.5s; }
+
+.clicked {
+  background-color: black;
+  color: white; }
+
+.clicked2 {
+  background-color: white;
+  color: black; }
+  .clicked2:hover {
+    background-color: #999999;
+    -webkit-transition: background-color 0.5s;
+    /* Safari */
+    transition: background-color 0.5s; }
+
+.clicked3 {
+  background-color: white;
+  color: blue;
+	border-color: white !important;}
+ 
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  margin: 0px auto; }
+  h1#greeting {
+    color: #6441a5; }
+
+h2 {
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5em;
+  margin: 0px auto; }
+
+#introduction {
+	margin: 5% 20% 0 20%;
+	text-align: left;
+}
+  
+strong {
+	color: #cc5490;
+} 
 	 
- }
- 
- #about {
-	 margin: 0 25% 0 25%;
-	 text-align: left;
- }
- 
- td { 
+td { 
 	vertical-align: top; 
 }
+
+/*
+
+Assistance from: http://www.w3schools.com/css/css_tooltip.asp
+
+*/
+.tweetooltip {
+  cursor: help;
+  position: relative;
+  display: inline-block; }
+
+.tweetooltip .tooltiptext {
+  border: 2px solid black;
+  visibility: hidden;
+  width: 125px;
+  background-color: white;
+  color: black;
+  border-radius: 6px;
+  padding: 0 0 15px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s; }
+  .tweetooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent; }
+	 
+.tweetooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
+  
+.tooltiptext.clicked4:after {
+	 border-color: white transparent transparent transparent;}
+} 
