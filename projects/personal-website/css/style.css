@@ -8,28 +8,29 @@
  */
 
 a {
-	color: #6441a5;
+	color: #B44335;
+	text-decoration: underline;
 	text-shadow: 0 -15px 1px transparent, 0 15px 1px transparent;
 }
  
 a:hover {
-	color: #c5b6e2;
+	color: #e4a9a2;
 	text-decoration: none;
 	text-shadow: 0 0 1px #c5b6e2, 0 0 1px #c5b6e2;
 	transition: all .4s linear 0s;
 }
-
+ 
 #about {
-	font-size:1.1em;
-}
-
-.asterisk {
-  font-size: 0.75em !important; }
+	font-size: 0.95em;
+	line-height: 18px;
+	padding-top: 8px;
+} 
  
 body {
-   font-size: 1.6rem !important;
-	font-family: 'Roboto', sans-serif;
-	margin: 5px;
+	background-color: black;
+	color: #f2f2f2;
+   font-size: 1.63rem;
+	font-family: 'Open Sans', sans-serif;
 	  -webkit-transition: background-color 2s ease, color 2s ease;
   /* Safari */
   transition: background-color 2s ease, color 2s ease;
@@ -49,7 +50,7 @@ button {
     transition: background-color 0.5s; }
 
 .clicked {
-  background-color: black;
+  background-color: #191919;
   color: white; }
 
 .clicked2 {
@@ -65,27 +66,89 @@ button {
   background-color: white;
   color: blue;
 	border-color: white !important;}
+
+footer {
+	font-size: 14px;
+	margin: 3% 20% 0 20%; }	
  
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 5em;
   margin: 0px auto; }
   h1#greeting {
-    color: #6441a5; }
+    color: #B44335; }
 
 h2 {
-  padding-top: 20px;
-  font-family: "Montserrat", sans-serif;
+  padding-top: 15px;
+  font-family: "Open Sans", sans-serif;
   font-size: 2.5em;
   margin: 0px auto; }
-
+  
+.img-circle {
+    border-radius: 50%;
+}
+ 
 #introduction {
-	margin: 5% 20% 0 20%;
+	height: 100vh;
+	padding: 0 20% 0% 20%;
 	text-align: left;
 }
   
+#landing-page {
+	height: 100vh;
+	background: url(../images/scene3.jpg) no-repeat 50% 50%;
+	background-size: cover;
+}
+  
+#logo {
+	display: inline-block;
+	position: absolute;
+	text-align: left;
+	width: 100px;
+	padding: 5px;
+}
+
+#nav-menu {
+	position: relative;
+	justify-content: space-between; 
+	margin-right: 1%;
+	text-align: right;
+}
+
+#nav-menu>a {
+	padding: 0 5px 0 5px;
+	text-decoration: none;
+	transition: none;
+}
+
+#nav-menu>a:hover {
+	
+}
+
+#nav {
+	position: relative;
+	padding: 10px 10px 0 0;
+	display: table;
+	box-sizing: border-box;
+	width: 100%;
+}  
+
+#scroll {
+	position: absolute;
+	bottom: 1%;
+	width: 60%;
+}
+
+.social-media {
+	float: left;
+}
+
+.social-media-icon {
+	padding: 0 1px 0 1px;
+}
+
 strong {
-	color: #cc5490;
+	color: #b43567;
 } 
 	 
 td { 
@@ -93,17 +156,16 @@ td {
 }
 
 /*
-
-Assistance from: http://www.w3schools.com/css/css_tooltip.asp
-
+	Tooltip effects
+	Assistance from: http://www.w3schools.com/css/css_tooltip.asp
 */
 .tweetooltip {
-  cursor: help;
+  cursor: pointer;
   position: relative;
   display: inline-block; }
 
 .tweetooltip .tooltiptext {
-  border: 2px solid black;
+  border: 2px solid white;
   visibility: hidden;
   width: 125px;
   background-color: white;
@@ -128,12 +190,60 @@ Assistance from: http://www.w3schools.com/css/css_tooltip.asp
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: black transparent transparent transparent; }
+    border-color: white transparent transparent transparent; }
 	 
 .tweetooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1; }
-  
+ 
 .tooltiptext.clicked4:after {
 	 border-color: white transparent transparent transparent;}
 } 
+
+/*
+	Scroll indicator animation
+	Assistance from: http://www.transformicons.com/builder.html
+*/
+
+@-webkit-keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes chevron-pulse {
+  0% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+.tcon-svgchevron {
+  height: 40px;
+  width: 40px; }
+
+.tcon-svgchevron path {
+  -webkit-animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  stroke: white;
+  stroke-width: 1px; }
+
+.tcon-svgchevron path.a1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s; }
+
+.tcon-svgchevron path.a2 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s; }
+
+.tcon-svgchevron path.a3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s; }
