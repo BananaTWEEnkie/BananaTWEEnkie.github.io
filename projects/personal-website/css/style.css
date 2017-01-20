@@ -121,7 +121,11 @@ h2 {
 	transition: none;
 }
 
-#nav-menu>a:hover {
+#nav-menu>a:hover span {
+	
+}
+
+#nav-menu>a:hover:before {
 	
 }
 

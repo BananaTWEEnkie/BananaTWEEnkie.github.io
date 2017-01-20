@@ -7,7 +7,8 @@
 <head>
 	<!--Set browser tab-->
 	<title>Thuy-Tien Nguyen-Tran</title>
-	<link href="images/lock-icon.png" rel="icon" type="images/ico"/>
+	<link rel="shortcut icon" href="iamges/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
 	<!-- Set meta. Specifies the character encoding for the HTML document
 		  The more widely a character encoding is used, the better
 		  chance the browser will understand it.
@@ -36,16 +37,18 @@
 	<header>
 		<!-- Navigation -->
 		<nav id="nav">
-			<a href="#"><img id="logo" src="images/banana-logo.png"></a>
+			<a href="#"><img id="logo" class="hidden-sm hidden-xs" src="images/banana-logo.png"></a>
 			<div id="nav-menu">
-				" <a href="resume.pdf">WORK</a>
-				<a href="resume.pdf">WORK</a>"
+				<div onmouseover="changeText()" onmouseout="changeBackText()">
+					" <a id="text1" href="resume.pdf">WORK</a>
+					<a id="text2" href="resume.pdf">WORK</a> "
+				</div
 				<br/> - <i>Peon</i>
 			</div>
 		</nav>
 	</header>
 		<div id="introduction">
-			<center>
+			<center> 
 				<img class="img-circle" src="images/me2.jpeg"><br/>
 				<span class="tweetooltip">
 					<h1 id="greeting"><b>Thuy</b></h1>
@@ -64,7 +67,7 @@
 			
 				Also likes to <a target="_blank" href="https://www.twitch.tv/bananatweenkie">stream</a> on <i class="fa fa-twitch" style="color: #6441A4;" aria-hidden="true"></i> and has the most fun interacting with her friends/viewers.
 			</p>
-			<div id="scroll">
+			<div id="scroll" class="hidden-sm hidden-xs">
 			<center>
 				<span class="tcon-indicator" aria-label="scroll" aria-hidden="true">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="tcon-svgchevron" viewBox="0 0 30 36">
@@ -77,54 +80,54 @@
 			</div>
 		</div>	
 	<center>
-
-				<h2><strong>Timeline</strong></h2><br/>
-				<table>
-					<tr>
-						<td style="padding:0 15px 0 0;"><b>2011</b></td>
-						<td>was the year Thuy started playing League of Legends.</td>
-					</tr>
-					<tr>
-						<td><b>2012</b></td>
-						<td>
-							was the year Thuy went to her <a target="blank" href="http://lol.gamepedia.com/IPL_Face_Off:_San_Francisco_Showdown">first esports event</a>.
-							<br/>Went to the <a target="_blank" href="http://lol.gamepedia.com/Season_2_World_Championship">League of Legends World Championship</a>.
-							<br/>Her path in esports began without her noticing.
-						</td>
-					</tr>
-					<tr>
-						<td><b>2014</b></td>
-						<td>
-							was the year Thuy went to <a target="_blank" href="https://www.cpp.edu/">Cal Poly Pomona</a>.
-							<br/>She joined her university's <a target="_blank" href="https://www.facebook.com/groups/CPPESPORTS/">esports club</a> and was very active.
-						</td>
-					</tr>
-					<tr>
-						<td><b>2015</b></td>
-						<td>
-							was the year Thuy decided to pursue esports.
-							<br/>Became Treasurer for her university's <a target="_blank" href="https://www.facebook.com/groups/CPPESPORTS/">esports club</a>.
-						</td>
-					</tr>
-					<tr>	
-						<td><b>2016</b></td>
-						<td>was her path to transformation.
-							<br/>Met someone who introduced her to dota.
-							<br/>Watched TI6. Fell in love.
-							<br/>Decided to dedicate her life to dota.
-							<br/>Went to the <a target="_blank" href="http://wiki.teamliquid.net/dota2/Boston_Major/2016">Boston Major</a>.
-							<br/>Graduated from university near the end of the year. 
-						</td>
-					</tr>
-					<tr>
-						<td><font color="#b48335"><b>2017</b></font></td>
-						<td><font color="#b48335"><b>will be the year to show the world what she got.</b></td></font>
-					</tr>
-				</table>
+		<div class="container">
+			<h2><strong>Timeline</strong></h2><br/>
+			<table>
+				<tr>
+					<td style="padding:0 15px 0 0;"><b>2011</b></td>
+					<td>was the year Thuy started playing League of Legends.</td>
+				</tr>
+				<tr>
+					<td><b>2012</b></td>
+					<td>
+						was the year Thuy went to her <a target="blank" href="http://lol.gamepedia.com/IPL_Face_Off:_San_Francisco_Showdown">first esports event</a>.
+						<br/>Went to the <a target="_blank" href="http://lol.gamepedia.com/Season_2_World_Championship">League of Legends World Championship</a>.
+						<br/>Her path in esports began without her noticing.
+					</td>
+				</tr>
+				<tr>
+					<td><b>2014</b></td>
+					<td>
+						was the year Thuy went to <a target="_blank" href="https://www.cpp.edu/">Cal Poly Pomona</a>.
+						<br/>She joined her university's <a target="_blank" href="https://www.facebook.com/groups/CPPESPORTS/">esports club</a> and was very active.
+					</td>
+				</tr>
+				<tr>
+					<td><b>2015</b></td>
+					<td>
+						was the year Thuy decided to pursue esports.
+						<br/>Became Treasurer for her university's <a target="_blank" href="https://www.facebook.com/groups/CPPESPORTS/">esports club</a>.
+					</td>
+				</tr>
+				<tr>	
+					<td><b>2016</b></td>
+					<td>was her path to transformation.
+						<br/>Met someone who introduced her to dota.
+						<br/>Watched TI6. Fell in love.
+						<br/>Decided to dedicate her life to dota.
+						<br/>Went to the <a target="_blank" href="http://wiki.teamliquid.net/dota2/Boston_Major/2016">Boston Major</a>.
+						<br/>Graduated from university near the end of the year. 
+					</td>
+				</tr>
+				<tr>
+					<td><font color="#b48335"><b>2017</b></font></td>
+					<td><font color="#b48335"><b>will be the year to show the world what she got.</b></td></font>
+				</tr>
+			</table>
 		</div>
 		<br/>
-		<h2><strong>Here are some cool things Thuy did</strong></h2><br/>
 		<div class="container">
+			<h2><strong>Here are some cool things Thuy did</strong></h2><br/>
 			<a target="_blank" href="https://www.youtube.com/watch?v=ceS4bOKzafA">Overwatch Interview Video</a>
 			<p><i>Participated in an episode with my university's department Youtube series.</i></p>
 			<a target="_blank" href="https://www.youtube.com/watch?v=tBmgC9q48Yc">Boston Major Video</a>
@@ -143,14 +146,16 @@
 				<br/><td><font color="#b48335">I was so happy :)</font></i></p>
 		</div>
 		<br/><br/>
-		<h2><strong>Love Esports? Let's chat.</strong></h2>
-		<h3>Instagram</h3>
-		<!-- Where all the social media goes -->
-		<div id="instagram">
-			<!-- SnapWidget -->
-			<script src="https://snapwidget.com/js/snapwidget.js"></script>
-			<iframe src="https://snapwidget.com/embed/312714" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:2px black solid; overflow:hidden; padding: 5px; width:33%; "></iframe>
-		</div>
+
+			<h2><strong>Love Esports? Let's chat.</strong></h2>
+			<h3>Instagram</h3>
+			<!-- Where all the social media goes -->
+			<div id="instagram">
+				<!-- SnapWidget -->
+				<script src="https://snapwidget.com/js/snapwidget.js"></script>
+				<iframe src="https://snapwidget.com/embed/312714" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:2px black solid; overflow:hidden; padding: 5px; width:33%; "></iframe>
+			</div>
+
 		<footer>
 			<div class="social-media">
 				<a target="_blank" href="https://www.facebook.com/profile.php?id=682465781" class="social-media-icon"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>

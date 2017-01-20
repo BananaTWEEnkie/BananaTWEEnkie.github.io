@@ -1,16 +1,11 @@
-function changeTheme() {
-	var theme = document.getElementById("theme").innerHTML;
-	
-	if (theme == "Dark Theme") {
-		document.getElementById("theme").innerHTML = "Light Theme";
-	} else {
-		document.getElementById("theme").innerHTML = "Dark Theme";
-	}
-	
-	$('body').toggleClass('clicked');
-	$('button').toggleClass('clicked2');
-	$('.tooltiptext').toggleClass('clicked3');
-	$('.tooltiptext').toggleClass('clicked4');
+function changeText() {
+	document.getElementById("text1").innerHTML="JOBS";
+	document.getElementById("text2").innerHTML="DONE";
+}
+
+function changeBackText() {
+	document.getElementById("text1").innerHTML="WORK";
+	document.getElementById("text2").innerHTML="WORK";
 }
 
 $(document).ready(function() {
