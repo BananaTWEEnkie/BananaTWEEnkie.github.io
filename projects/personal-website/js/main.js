@@ -1,12 +1,27 @@
-function changeText() {
-	document.getElementById("text1").innerHTML="JOBS";
-	document.getElementById("text2").innerHTML="DONE";
-}
+$("#quote").mouseover(function() {
+	$("#text1").text(function(i, oldText) {
+		return oldText === 'WORK' ? 'JOBS' : oldText;
+	});
+	$("#text2").text(function(i, oldText) {
+		return oldText === 'WORK' ? 'DONE' : oldText;
+	});
+	$("#text3").text(function(i, oldText) {
+		return oldText === 'Peon' ? 'Peasant' : oldText;
+	});
+});
 
-function changeBackText() {
-	document.getElementById("text1").innerHTML="WORK";
-	document.getElementById("text2").innerHTML="WORK";
-}
+$("#quote").mouseout(function() {
+	$("#text1").text(function(i, oldText) {
+		return oldText === 'JOBS' ? 'WORK' : oldText;
+	});
+	$("#text2").text(function(i, oldText) {
+		return oldText === 'DONE' ? 'WORK' : oldText;
+	});
+	$("#text3").text(function(i, oldText) {
+		return oldText === 'Peasant' ? 'Peon' : oldText;
+	});
+});
+
 
 $(document).ready(function() {
 	$('body').css('display', 'none');
