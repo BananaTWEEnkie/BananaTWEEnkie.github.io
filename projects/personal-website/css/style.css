@@ -10,14 +10,12 @@
 a {
 	color: #B44335;
 	text-decoration: underline;
-	text-shadow: 0 -15px 1px transparent, 0 15px 1px transparent;
 }
  
 a:hover {
 	color: #e4a9a2;
 	text-decoration: none;
-	text-shadow: 0 0 1px #c5b6e2, 0 0 1px #c5b6e2;
-	transition: all .4s linear 0s;
+	transition: color 0.7s ease;
 }
  
 #about {
@@ -69,7 +67,8 @@ button {
 
 footer {
 	font-size: 14px;
-	margin: 3% 20% 0 20%; }	
+	margin: 3% 20% 0 20%; 
+}	
  
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -148,7 +147,7 @@ h2 {
 }
 
 .social-media-icon {
-	padding: 0 1px 0 1px;
+	padding: 0 1px 25px 1px;
 }
 
 strong {
