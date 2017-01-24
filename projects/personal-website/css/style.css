@@ -9,20 +9,17 @@
 
 a {
 	color: #B44335;
-	text-decoration: underline;
-}
+	text-decoration: underline; }
  
 a:hover {
 	color: #e4a9a2;
 	text-decoration: none;
-	transition: color 0.7s ease;
-}
+	transition: color 0.7s ease; }
  
 #about {
 	font-size: 0.95em;
 	line-height: 18px;
-	padding-top: 8px;
-} 
+	padding-top: 8px; } 
  
 body {
 	background-color: black;
@@ -31,44 +28,11 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	  -webkit-transition: background-color 2s ease, color 2s ease;
   /* Safari */
-  transition: background-color 2s ease, color 2s ease;
-}
- 
-button {
-  background-color: #4c4c4c;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px; }
-  button:hover {
-    background-color: black;
-    -webkit-transition: background-color 0.5s;
-    /* Safari */
-    transition: background-color 0.5s; }
-
-.clicked {
-  background-color: #191919;
-  color: white; }
-
-.clicked2 {
-  background-color: white;
-  color: black; }
-  .clicked2:hover {
-    background-color: #999999;
-    -webkit-transition: background-color 0.5s;
-    /* Safari */
-    transition: background-color 0.5s; }
-
-.clicked3 {
-  background-color: white;
-  color: blue;
-	border-color: white !important;}
+  transition: background-color 2s ease, color 2s ease; }
 
 footer {
 	font-size: 14px;
-	margin: 3% 20% 0 20%; 
-}	
+	margin: 3% 20% 0 20%; }	
  
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -90,73 +54,54 @@ h2 {
 #introduction {
 	height: 100vh;
 	padding: 0 20% 0% 20%;
-	text-align: left;
-}
+	text-align: left; }
   
 #landing-page {
 	height: 100vh;
 	background: url(../images/scene3.jpg) no-repeat 50% 50%;
-	background-size: cover;
-}
+	background-size: cover; }
   
 #logo {
 	display: inline-block;
 	position: absolute;
 	text-align: left;
 	width: 100px;
-	padding: 5px;
-}
+	padding: 5px; }
 
 #nav-menu {
 	position: relative;
 	justify-content: space-between; 
 	margin-right: 1%;
-	text-align: right;
-}
+	text-align: right; }
 
 #nav-menu>div>a {
 	padding: 0 5px 0 5px;
 	text-decoration: none;
-	transition: none;
-}
-
-#nav-menu>a:hover span {
-	
-}
-
-#nav-menu>a:hover:before {
-	
-}
+	transition: none; }
 
 #nav {
 	position: relative;
 	padding: 10px 10px 0 0;
 	display: table;
 	box-sizing: border-box;
-	width: 100%;
-}  
+	width: 100%; }  
 
 #scroll {
 	position: absolute;
 	bottom: 1%;
-	width: 60%;
-}
+	width: 60%; }
 
 .social-media {
-	float: left;
-}
+	float: left; }
 
 .social-media-icon {
-	padding: 0 1px 25px 1px;
-}
+	padding: 0 1px 25px 1px; }
 
 strong {
-	color: #b43567;
-} 
+	color: #b43567; } 
 	 
 td { 
-	vertical-align: top; 
-}
+	vertical-align: top; }
 
 /*
 	Tooltip effects
@@ -200,8 +145,7 @@ td {
   opacity: 1; }
  
 .tooltiptext.clicked4:after {
-	 border-color: white transparent transparent transparent;}
-} 
+	 border-color: white transparent transparent transparent;} } 
 
 /*
 	Scroll indicator animation
