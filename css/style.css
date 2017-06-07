@@ -194,3 +194,39 @@ td {
 .tcon-svgchevron path.a3 {
   -webkit-animation-delay: -1s;
   animation-delay: -1s; }
+  
+  
+  
+ .clicked {
+  background-color: white;
+  color: black; }
+
+.clicked2 {
+  background-color: black;
+  color: white; }
+  .clicked2:hover {
+    background-color: #999999;
+    -webkit-transition: background-color 0.5s;
+    /* Safari */
+    transition: background-color 0.5s; }
+
+.clicked3 {
+  background-color: black;
+  color: white; }
+  
+button {
+  background-color: #4c4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px; }
+  button:hover {
+    background-color: black;
+    -webkit-transition: background-color 0.5s;
+    /* Safari */
+    transition: background-color 0.5s; }
+	 
+.pic {
+	width: 200px;
+	height: 242px;
+}
