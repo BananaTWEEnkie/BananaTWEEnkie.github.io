@@ -107,6 +107,7 @@ td {
 	Tooltip effects
 	Assistance from: http://www.w3schools.com/css/css_tooltip.asp
 */
+
 .tweetooltip {
   cursor: pointer;
   position: relative;
@@ -195,15 +196,17 @@ td {
   -webkit-animation-delay: -1s;
   animation-delay: -1s; }
   
+/*
+	Button configuration for light & dark theme
+*/  
   
-  
- .clicked {
-  background-color: white;
-  color: black; }
-
-.clicked2 {
+.clicked {
   background-color: black;
   color: white; }
+
+.clicked2 {
+  background-color: white;
+  color: black; }
   .clicked2:hover {
     background-color: #999999;
     -webkit-transition: background-color 0.5s;
@@ -211,8 +214,8 @@ td {
     transition: background-color 0.5s; }
 
 .clicked3 {
-  background-color: black;
-  color: white; }
+  background-color: white;
+  color: black; }
   
 button {
   background-color: #4c4c4c;
@@ -225,8 +228,4 @@ button {
     -webkit-transition: background-color 0.5s;
     /* Safari */
     transition: background-color 0.5s; }
-	 
-.pic {
-	width: 200px;
-	height: 242px;
-}
+	

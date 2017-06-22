@@ -1,0 +1,138 @@
+.thumbnail {
+  line-height: 1.3;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.thumbnail > figure > img {
+	border: 1px solid black;
+}
+
+.thumbnail figure img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}	
+
+/*~*
+ *		Author: Thuy-Tien Nguyen-Tran
+ *		Description: For styling my projects page
+*~*/
+
+a {
+	color: #B44335;
+	text-decoration: none; }
+
+body {
+	background-color: white;
+	color: #323232;
+   font-size: 1.63rem;
+	font-family: 'Lato', sans-serif;
+	  -webkit-transition: background-color 2s ease, color 2s ease;
+  /* Safari */
+  transition: background-color 2s ease, color 2s ease; }	
+  
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 4.5em;
+	text-transform: uppercase; }
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-size: 1em; }
+
+/*
+	Button configuration for projects
+*/
+
+.btn:hover {
+	transition: background-color 0.5s ease, border-color 0.5s ease; }
+	
+.btn-twitch {
+	background-color: #6441A5;
+	border-color: #593a93;
+	color: white; }
+
+.btn-twitch:hover {
+	background-color: #4a307b;
+	border-color: #4a307b;
+	color: white; }
+
+.btn-fb {
+	background-color: #21b4ba;
+	border-color: #21b4ba;
+	color: white; }
+
+.btn-fb:hover {
+	background-color: #188488;
+	border-color: #188488;
+	color: white; }
+	
+/*
+	image hover effect
+	Credit: https://codepen.io/nxworld/pen/ZYNOBZ
+*/	
+
+
+.hover figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.hover figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;	
+}
+
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;	
+}
+
+/*
+	Button configuration for light & dark theme
+*/  	
+	
+.clicked {
+  background-color: #191919;
+  color: white; }
+
+.clicked2 {
+  background-color: white;
+  color: black; }
+  .clicked2:hover {
+    background-color: #999999;
+    -webkit-transition: background-color 0.5s;
+    /* Safari */
+    transition: background-color 0.5s; }
+
+.clicked3 {
+  background-color: white;
+  color: black; }
+  
+button {
+  background-color: #4c4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px; }
+  button:hover {
+    background-color: black;
+    -webkit-transition: background-color 0.5s;
+    /* Safari */
+    transition: background-color 0.5s; }

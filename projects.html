@@ -19,12 +19,12 @@
 	<!-- Import bootstrap -->
 	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<!-- Import custom css AFTER you import bootstrap -->
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="css/project.css" type="text/css"/>
 	<link rel="stylesheet" href="css/font-awesome-animation.min.css">
 	<!-- Import bootstrap icons-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" media="all"/>	
 	<!-- Import google font -->
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Montserrat:400,700|Playfair+Display" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
 	<!-- Import jQuery.
 		 Integrity and crossorigin allows browsers to ensure that resources on 3rd party servers aren't tampered with. -->
 	<script src="https://code.jquery.com/jquery-2.2.3.min.js"
@@ -34,68 +34,187 @@
 <a target="_blank" href=""></a>
 <body>
 	<header>
-		<center><h1>Projects</h1></center>
+		<center><h1><b>Projects</b></h1></center>
+		<div style="float: right">
+			<button type="button" id="theme" onclick="changeTheme()">Light Theme</button>
+		</div>
 	</header>
 	<br/><br/>
 	<div class="container">
-		<div class="row">
+		<div class="row is-flex row1">
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="images/ctf.png" alt="...">
-					<center>
+				<div class="thumbnail hover">
+					<figure style="background-color:#21b4ba;"><img src="images/ctf.png" alt="..."/></figure>
 					<div class="caption">
-						<h3>Facebook CTF website</h3>
+						<h3><font color="#21b4ba">Facebook CTF website</font></h3>
 						<p>
 							Developed a website to allow students to submit and answer questions to practice for Capture the Flag, a cyber security competition by Facebook
 							<br/><br/>
-							Developed in HTML5, CSS3 and JavaScript on Notepad++
+							<center>
+							<b>Languages used:</b><br/> HTML5, CSS3 and JavaScript
 						</p>
 						<p>
-							<a href="projects/ctf-website/home.html" class="btn btn-primary" role="button">See Project</a>
-							<a href="https://github.com/BananaTWEEnkie/BananaTWEEnkie.github.io/tree/master/projects/ctf-website" class="btn btn-primary" role="button">Source</a>
+							<a target="_blank" href="projects/ctf-website/home.html" class="btn btn-fb" role="button">See Project</a>
+							<a target="_blank" href="https://github.com/BananaTWEEnkie/BananaTWEEnkie.github.io/tree/master/projects/ctf-website" class="btn btn-fb" role="button">Source</a>
+							</center>
 						</p>
 					</div>
-					</center>
 				</div>
-		  </div>
+			</div>
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="..." alt="...">
+				<div class="thumbnail hover">
+					<figure style="background-color:red;"><img src="images/simon-says.png" alt="..."/></figure>
 					<div class="caption">
-						<h3>Thumbnail label</h3>
-						<p>...</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						<h3><font color="red">Simon Says in JavaScript</font></h3>
+						<p>
+							A class project in which I had to create a Simon Says game entirely in JavaScript. This allowed me to have a better understanding about game development and learn about game loop.
+							<br/><br/>
+							<center>
+							<b>Languages used:</b><br/> HTML5, CSS3 and JavaScript
+						</p>
+						<p>
+							<a href="projects/Simon-Says-in-JavaScript/game1.html" class="btn btn-danger" role="button">See Project</a>
+							<a href="https://github.com/BananaTWEEnkie/Simon-Says-in-Javascript" class="btn btn-danger" role="button">Source</a>
+							</center>
+						</p>
 					</div>
 				</div>
-		  </div>
+			</div>
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="..." alt="...">
+				<div class="thumbnail hover">
+					<figure style="background-color:#6441A5;"><img src="images/twitch-app.png" alt="..."/></figure>
 					<div class="caption">
-						<h3>Thumbnail label</h3>
-						<p>...</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						<h3><font color="#6441A5">Twitch Application</font></h3>
+						<p>
+							Twitch was looking for 3 software engineer interns in 2015. Took the opportunity to turn my application into a website.
+							<br/><br/>
+							<p>
+								<center>
+								<b>Languages used:</b><br/> HTML5, CSS3 and JavaScript
+							</p>
+						</p>
+						<p>
+							<a href="projects/personal-website/twitch.html" class="btn btn-twitch" role="button">See Project</a>
+							<a href="https://github.com/BananaTWEEnkie/BananaTWEEnkie.github.io/blob/master/projects/personal-website/twitch.html" class="btn btn-twitch" role="button">Source</a>
+							</center>
+						</p>
 					</div>
 				</div>
-		  </div>
+			</div>
 		</div>
-		<div class="row">
+
+		<div class="row is-flex row2">
 			<div class="col-sm-6 col-md-4">
-				<div class="thumbnail">
-					<img src="..." alt="...">
+				<div class="thumbnail hover">
+					<figure><img src="images/password-test.png" alt="..."/></figure>
 					<div class="caption">
-						<h3>Thumbnail label</h3>
-						<p>...</p>
-						<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+						<h3><font color="black">Password Test</font></h3>
+						<p>
+							A project was requested by my professor, Jason Pittman, for a program used for research. He wanted to test people on their ability to recognize a strong password from a weak password.
+							<br/><br/>
+							<p>
+								<center>
+								<b>Languages used:</b><br/> Java
+							</p>
+						</p>
+						<p>
+							<a href="https://github.com/BananaTWEEnkie/Password-Recognition-Test" class="btn btn-twitch" role="button">Source</a>
+							</center>
+						</p>
 					</div>
 				</div>
-		  </div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail hover">
+					<figure><img src="images/riotAPI.png" alt="..."/></figure>
+					<div class="caption">
+						<h3><font color="#EE2E24">Riot API Challenge 2.0</font></h3>
+						<p>
+							I saw the Riot API Challenge posted on the League of Legends client. Even though I saw it one week before the deadline, I thought that I might as well give it a shot. Even though I did not make it, I manage to finish a good chunk of what was intended.
+							<br/><br/>
+							<p>
+								<center>
+								<b>Languages used:</b><br/> Java
+							</p>
+						</p>
+						<p>
+							<a href="http://na.leagueoflegends.com/en/news/community/contests/riot-games-api-challenge-20" class="btn btn-twitch" role="button">See Project</a>
+							<a href="https://github.com/BananaTWEEnkie/Riot-API" class="btn btn-twitch" role="button">Source</a>
+							</center>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail hover">
+					<figure><img src="images/snapshot.png" alt="..."/></figure>
+					<div class="caption">
+						<h3><font color="#31B0D5">Snapshot</font></h3>
+						<p>
+							A class project in which we had to find a client who needed a website. I worked as one of the two developers to create a website showcasing people's stories, similar to Humans of New York. I worked with a group of classmates and went through the process of scrum to achieve our goal in 10 weeks. We used Weebly.
+							<br/><br/>
+							<p>
+								<center>
+								<b>Languages used:</b><br/> HTML5, CSS3
+							</p>
+						</p>
+						<p>
+							<a href="http://www.snapshtstories.com/" class="btn btn-info" role="button">See Project</a>
+							</center>
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
+		
+		<div class="row is-flex row3">
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail hover">
+					<figure><img src="images/jump.png" alt="..."/></figure>
+					<div class="caption">
+						<h3><font color="#ED1386">Jump</font></h3>
+						<p>
+							A game built in Unity. You have lived all your life in the perfect place. One day, you awoke to many screams that you soon realize were your friends. Everywhere you looked, there was nothing but flames and the smoke that risen from it. You must escape to safety up on the trees where you left your hot air balloon. But your friends need your help! Can you save them all before the fire engulfs you?
+							<br/><br/>
+							<p>
+								<center>
+								<b>Languages used:</b><br/> C#
+							</p>
+						</p>
+						<p>
+							<a href="projects/games/Jump.html" class="btn btn-twitch" role="button">See Project</a>
+							<a href="https://github.com/BananaTWEEnkie/Jump" class="btn btn-twitch" role="button">Source</a>
+							</center>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-sm-6 col-md-4">
+				<div class="thumbnail hover">
+					<figure><img src="images/basu.png" alt="..."/></figure>
+					<div class="caption">
+						<h3><font color="#6B6D6F">Basu</font></h3>
+						<p>
+							This was my first game I built. There was a global game jam hosted by the University of South California in the middle of January in 2015. Me, along with a couple other officers and members from the Game Design and Development Club, decided to go. The team consisted of only 2 people: Shaina, a talanted graphic designer, and me as the developer.
+							<br/><br/>
+							<p>
+								<center>
+								<b>Languages used:</b><br/> C#
+							</p>
+						</p>
+						<p>
+							<a href="http://globalgamejam.org/2015/games/basu-catches-things" class="btn btn-twitch" role="button">See Project</a>
+							</center>
+						</p>
+					</div>
+				</div>
+			</div>			
+		</div>
+		
 	</div>
+
 	<footer>
-		<div style="float:right">
-			<button type="button" id="theme" onclick="changeTheme()">Light Theme</button>
-		</div>
+
 	</footer>
 	
 	<!-- Put script at the end for faster loading -->
