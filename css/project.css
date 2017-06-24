@@ -55,16 +55,16 @@ h3 {
 .btn:hover {
 	transition: background-color 0.5s ease, border-color 0.5s ease; }
 	
-.btn-twitch {
-	background-color: #6441A5;
-	border-color: #593a93;
+.btn-basu {
+	background-color: #6B6D6F;
+	border-color: #58595b;
 	color: white; }
 
-.btn-twitch:hover {
-	background-color: #4a307b;
-	border-color: #4a307b;
-	color: white; }
-
+.btn-basu:hover {
+	background-color: #4e5051;
+	border-color: #4e5051;
+	color: white; }	
+	
 .btn-fb {
 	background-color: #21b4ba;
 	border-color: #21b4ba;
@@ -73,6 +73,46 @@ h3 {
 .btn-fb:hover {
 	background-color: #188488;
 	border-color: #188488;
+	color: white; }
+
+.btn-jump {
+	background-color: #ED1386;
+	border-color: #c90f72;
+	color: white; }
+
+.btn-jump:hover {
+	background-color: #b70e67;
+	border-color: #b70e67;
+	color: white; }		
+	
+.btn-password-test {
+	background-color: #25313F;
+	border-color: #161e26;
+	color: white; }	
+
+.btn-password-test:hover {
+	background-color: #0f141a;
+	border-color: #0f141a;
+	color: white; }	
+
+.btn-riot {
+	background-color: #257372;
+	border-color: #1b5555;
+	color: #FBB95B; }
+
+.btn-riot:hover {
+	background-color: #174646;
+	border-color: #174646;
+	color: #FBB95B; }
+
+.btn-twitch {
+	background-color: #6441A5;
+	border-color: #593a93;
+	color: white; }
+
+.btn-twitch:hover {
+	background-color: #4a307b;
+	border-color: #4a307b;
 	color: white; }
 	
 /*
