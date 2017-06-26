@@ -25,8 +25,13 @@
 *~*/
 
 a {
-	color: #B44335;
-	text-decoration: none; }
+	color: #4c4c4c;
+	text-decoration: none;
+	transition: color 0.5s ease; 	}
+
+a:hover {
+	color: #191919;
+}
 
 body {
 	background-color: white;
