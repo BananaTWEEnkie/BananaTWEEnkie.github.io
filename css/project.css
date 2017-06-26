@@ -25,12 +25,12 @@
 *~*/
 
 a {
-	color: #4c4c4c;
+	color: #bdbdbd;
 	text-decoration: none;
 	transition: color 0.5s ease; 	}
 
 a:hover {
-	color: #191919;
+	color: #7e7e7e;
 }
 
 body {
