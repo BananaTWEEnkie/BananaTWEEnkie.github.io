@@ -1,4 +1,5 @@
   <head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -39,7 +40,13 @@
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/WireFrame.css" />
+	
+	<!--Custom Css-->
+    <link rel="stylesheet" type="text/css" href="CSS/WireFrame2.css" />
+
+	
+	<!--Font Ref-->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Roboto" rel="stylesheet">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     
@@ -47,7 +54,6 @@
   
   <body>
 
-    <br />
 	
 	<!--Navigation Bar-->
 
@@ -66,20 +72,20 @@
    
     </div>
 	
-	
-			
 		
 		  <div class="collapse navbar-collapse" id="navbar-collapse">
 		  
                 <ul class="nav nav-pills navbar-right">
                    <li class ="active">
-                        <a class = "dropdown-toggle" data-toggle = "dropdown" href="index.html" class="page-scroll">Home</a>
+                        <a class = "dropdown-toggle" data-toggle = "dropdown" href="index.html" class="page-scroll">Home
 						
 						 <span class ="caret"> </span> </a>
 
                         <ul class ="dropdown-menu">
+						<li>  <li><a href = "index.html#home"> About </a></li>
                             <li><a href = "index.html#MissionStatement"> Mission Statement </a></li>
-						<li><a href = "index.html#Faq"> FAQ </a></li>
+							 <li><a href = "index.html#WhoWeAre"> Who We Are </a></li>
+						<li><a href = "index.html#FAQ"> FAQ </a></li>
                             <li><a href="index.html#Sponsors">Sponsors</a></li>
 
                         </ul>
@@ -117,9 +123,7 @@
                     <li>
                         <a href="Status.html" class="page-scroll">Service Status</a>
                     </li>
-                    <li>
-                        <a href="Contact.html" class="page-scroll">Contact Page</a>
-                    </li>
+                   
                 </ul>
 				</div>
             </div>
@@ -131,31 +135,223 @@
 	<!--First section containing what the SDC is about-->
 	
     <section id="home" class="tmw-section">
-	<h1 class = "homeH1">About The SDC</h1>
-	<div id = "homeDiv">
+	<center><h1 class = "homeH1">About The SDC</h1></center>
+	
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="col-lg-12"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class = "aboutContent">The Student-run Datacenter (SDC) is a private cloud maintained and developed by students at Cal Poly Pomona. The SDC is made possible due to industry partnerships with Avanade, Chef, Microsoft and Juniper. The SDC empowers students via the polytechnic methodology which emphasizes a learn by doing approach, thus granting students real-world experience implementing and working with cloud solutions. 
+</p>
             </div>
         </div>
-		</div>
+		
     </section>
     
 	<!--Mission Statement Section-->
 	<section id="MissionStatement" class="tmw-section">
-	<center><h1 id= "missionH1">Our Mission</h1></center>
-	<div id = "missionDiv">
+	<center><h1>Our Mission</h1><center>
+	
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="col-lg-12">
-                   <blockquote>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." </blockquote>
+                  <p class = "MissionContent">"To give Cal Poly Pomona students an opportunity for real world experience running a data center." </p>
                   
                 </div>
             </div>
         </div>
+		
+    </section>
+	
+	<!--Who We Are Section-->
+	<section id="WhoWeAre" class="tmw-section">
+	<center><h1>Who We Are</h1></center>
+	
+        <div class="container-fluid">
+            <div class="row-fluid">
+			
+          <div class = "col-xs-6 col-sm-3"> 
+				<center>
+				
+					
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					
+					<h4> John Smith </h4>
+					<div class = "cardContent">
+					<p> Senior Software Engineer </p>
+					
+					
+
+					</div>
+					</div>
+					</div>
+					
+				
+					 </center>
+					 
+					 <center>
+					
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Ann Reyes </h4>
+					<div class = "cardContent">
+					<p>  Assistant Software Engineer </p>
+					</div>
+					</div>
+					 </center>
+					 
+					  <center>
+					
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+				
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Tom Jerry </h4>
+					<div class = "cardContent">
+					<p>  Assistant Software Engineer </p>
+					</div>
+					</div>
+					 </center>
+                </div>
+				
+				
+
+			
+			 <div class = "col-xs-6 col-sm-3"> 
+				<center>
+					
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Dan Chan </h4>
+					<div class = "cardContent">
+					<p> Technical Support </p>
+					</div>
+					</div>
+					 </center>
+					 
+					 <center>
+				
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Emilia Mae </h4>
+					<div class = "cardContent">
+					<p> Networking Engineer </p>
+					</div>
+					</div>
+					 </center>
+					 
+					  <center>
+					
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Terry Tan </h4>
+					<div class = "cardContent">
+					<p>  Assistant Software Engineer </p>
+					</div>
+					</div>
+					 </center>
+                </div>
+				 <div class = "col-xs-6 col-sm-3"> 
+				<center>
+					
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Mary Lane </h4>
+					<div class = "cardContent">
+					<p> Technical Support </p>
+					</div>
+					</div>
+					 </center>
+					 
+					 <center>
+			
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+				
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Daniel Smith </h4>
+					<div class = "cardContent">
+					<p> Networking Engineer </p>
+					</div>
+					</div>
+					 </center>
+					 
+					  <center>
+				
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+				
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Sombra Dorado </h4>
+					<div class = "cardContent">
+					<p> Assistant Software Engineer </p>
+					</div>
+					</div>
+					 </center>
+				</div>
+				 <div class = "col-xs-6 col-sm-3"> 
+				<center>
+					<a id ="Employee4" href = "#" data-tooltip="hello">
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					</a>
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Samuel Rock </h4>
+					<div class = "cardContent">
+					<p> Technical Support </p>
+					</div>
+					</div>
+					 </center>
+					 
+					 <center>
+			
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+					</a><div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Allie Rose </h4>
+					<div class = "cardContent">
+					<p> Networking Engineer </p>
+					</div>
+					</div>
+					 </center>
+					 
+					  <center>
+				
+					<img src = "images/Sihouette-resize.png" class = "imgEmployee" alt = "Avatar" />
+				
+					<div class = "row-fluid">
+					<div class = "container-fluid cardcontainer-fluid">
+					<h4> Eric Lee </h4>
+					<div class = "cardContent">
+					<p> Technical Support </p>
+					</div>
+					</div>
+					 </center>
+				
+					 </div>
+					 
+				 
+                </div>
+        </div>
 		</div>
+		</div>
+		
+		</div>
+		
+		</div>
+		
     </section>
     
 	<!--FAQ Section-->
@@ -164,84 +360,33 @@
             <div class="row-fluid">
                 <div class="col-lg-12">
                 <h1>FAQ</h1>
-		
+	
 			<!--Setup for Panel dropdown-->
-			<!--Question and Answer 1-->
-				<div id= "accordion" role="tablist" aria-multiselectable="true">
-				<div class= "col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
-				<div class="panel panel-custom">
-				<div class="panel-heading" role = "tab" id = "questionOne">
-				<h4 class = "panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href= "#Faq#answerOne" aria-expanded="true" aria-controls="answerOne"> 
-				  Where is the Student Data Center located?
-				  </a>
-				  </h4>
-				  </div>
-				  
-				  <div id = "answerOne" class = "panel-collapse collapse " role = "tabpanel" aria-labelledby="questionOne">
-				  <div class = "panel-body">
-				  Insert location here.
-				  </div>
-				  </div>
-		</div>
-		
-		
-		<!--Question and Answer 2-->
-		<div class="panel panel-custom">
-				<div class="panel-heading">
-				<h4 class = "panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href= "#Faq#answerTwo" aria-expanded="true" aria-controls="answerTwo"> 
-				  What is it being used for?
-				  </a>
-				  </h4>
-				  </div>
-				  
-				  <div id = "answerTwo" class = "panel-collapse collapse " role = "tabpanel" aria-labelledby="questionTwo">
-				  <div class = "panel-body">
-				 Insert content here.
-				  </div>
-				  </div>
-		</div>
-		</div>
-		<!--Question and Answer 3-->
-		<div class= "col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">
-				<div class="panel panel-custom">
-				<div class="panel-heading" role = "tab" id = "questionThree">
-				<h4 class = "panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href= "#Faq#answerThree" aria-expanded="true" aria-controls="answerThree"> 
-				  How can I volunteer for the SDC?
-				  </a>
-				  </h4>
-				  </div>
-				  
-				  <div id = "answerThree" class = "panel-collapse collapse " role = "tabpanel" aria-labelledby="questionThree">
-				  <div class = "panel-body">
-				  Insert content here.
-				  </div>
-				  </div>
-		</div>
-		
-		
-		<!--Question and Answer 4-->
-			
-		<div class="panel panel-custom">
-				<div class="panel-heading">
-				<h4 class = "panel-title">
-                  <a data-toggle="collapse" data-parent="#accordion" href= "#Faq#answerFour" aria-expanded="true" aria-controls="answerFour">
-				  What do I do if I want to help sponsor the SDC?
-				  </a>
-				  </h4>
-				  </div>
-				  
-				  <div id = "answerFour" class = "panel-collapse collapse " role = "tabpanel" aria-labelledby="questionFour">
-				  <div class = "panel-body">
-				 Simply contact us through email at example@cpp.edu and we'll get right to you!
-				  </div>
-				  </div>
-				  
-		</div>
-		
-		</div>
+				<div class= "col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 ">
+<div class = "faqCard">
+<h5 class = "faqQuestion"> Where is the Student Data Center located? </h5>
+Insert location here.
+</div>
+
+
+<div class = "faqCard">
+<h5 class = "faqQuestion">   What is it being used for? </h5>
+Insert content here.
+</div>
+</div>
+
+<div class= "col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0 ">
+<div class = "faqCard">
+<h5 class = "faqQuestion">  How can I volunteer for the SDC? </h5>
+Insert content here.
+</div>
+
+
+<div class = "faqCard">
+<h5 class = "faqQuestion"> What do I do if I want to help sponsor the SDC?? </h5>
+Insert content here.
+</div>
+</div>
 		<!--End of panel dropdown setup-->
 		</div>
 		</div>
@@ -257,6 +402,8 @@
             </div>
         </div>
     </section> -->
+	
+	
     
 	
 	<!--Sponsor Section-->
@@ -268,44 +415,34 @@
 					<div class="row-fluid">
   <div class="col-xs-6 col-md-4">
   
-  <a href = "http://www.cpp.edu"><img class = "sponsorImg" src= "images/SampleSponsor1.png"/> </a>
+    <a href = "https://www.avanade.com/en"><img class = "sponsorImg" src= "images/SponsorAvanade.png"/> </a>
  <br/>
   <br/>
-   <a href = "http://www.amazon.com"><img class = "sponsorImg" src= "images/SampleSponsor2.png"/> </a>   
+<br/>
+   <a href = "http://www.juniper.net/us/en/"><img class = "sponsorImg" src= "images/SponsorJuniper.png"/> </a>   
    <br/>
   <br/>
   <br/>
-   <a href = "http://www.google.com"><img class = "sponsorImg" src= "images/SampleSponsor3.png"/> </a>
+   
   </div>
   
   <div class="col-xs-6 col-md-4">
-  
-  
-  
-  <a href = "https://www.avanade.com/en"><img class = "sponsorImg" src= "images/SampleSponsor4.png"/> </a>
+
+     <a href = "https://www.chef.io/chef/"><img class = "sponsorImg" src= "images/SponsorChef.png"/> </a>  
    <br/>
   <br/>
   <br/>
-    <a href = "http://www.amazon.com"><img class = "sponsorImg" src= "images/SampleSponsor5.png"/> </a>   
-   <br/>
-  <br/>
-  <br/>
-   <a href = "http://www.google.com"><img class = "sponsorImg" src= "images/SampleSponsor6.png"/> </a>
+    
   </div>
    
    
   <div class="col-xs-6 col-md-4">
-  <a href = "http://www.lenovo.com/us/en/"><img class = "sponsorImg" src= "images/SampleSponsor7.png"/> </a>
+ <a href = "https://www.microsoft.com/en-us/"><img class = "sponsorImg" src= "images/SponsorMicrosoft.png"/>  </a>  
    <br/>
   <br/>
   <br/>
  
-    <a href = "http://www.northropgrumman.com/Pages/default.aspx"><img class = "sponsorImg" src= "images/SampleSponsor8.png"/> </a>   
-   <br/>
-  <br/>
-  <br/>
-  <br/>
-   <a href = "http://www.belkin.com/"><img class = "sponsorImg" src= "images/SampleSponsor9.png"/> </a>
+   
   
   </div>
 
@@ -319,47 +456,7 @@
 	
 	
 	
-    <script>
-        //Code from Jason Pittman
-        //modules are container-fluids for angular artifacts
-        //bound to the view through ng-app=""
-        angular.module('guessTheNumber', [])
-        .controller('GuessTheNumberController', GuessTheNumberController); //register the controller as an artifact
-        
-        //controller definition
-        function GuessTheNumberController($scope) {
-            //controll method 1
-            $scope.verifyGuess = function () {
-                $scope.verification = $scope.guess - $scope.randomNumber;
-                $scope.numOfGuesses++;
-            }
-            //controller method 2
-            $scope.startGame = function () {
-                $scope.randomNumber = Math.floor((Math.random() * 5000) + 500); //get a random number 500-5000
-                $scope.guess = null;
-                $scope.verification = null;
-                $scope.numOfGuesses = 0;
-            }
-            //execute the startGame method when the angular app loads
-            $scope.startGame();
-        }
-
-        //from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
-        $(function () {
-            $('a[href*="#"]:not([href="#"])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-		</script>
+    
 		
 		
 		<script>
@@ -373,38 +470,58 @@ function faqDropdown() {
     }
 }
 
-</script>
+
 	
-<script>
+
 //Collapse
 
 $('.collapse').collapse()
 
-</script>	
 
-    
+ //Hover change on employee 1
+$(function() {
+$("#employee1").hover(function() {
+$("#employeeDetails").text("Hello");
+}, function() {
+}
+
+//Go back to default settings
+$("#employeeDetails").text("goodbye");
+});
+});
+
+
+
+
+ </script>
+
+ 
+ 
+
 </body>
-<footer>© fn Solutions
-	<div class = "row-fluid">
-	<div class="col-xs-6 col-md-4">
-	Contact us:
-	<br/>
-	Email:example@example.com
-	<br/>
-	Phone Number: 123-456-7891
-	<br/>
-	Address:
-	</div>
+<footer>
+<h4 class = "footerH4">© Cal Poly Pomona 2016</h4>
+<br/>
 	
+	<h4 class = "footerH4">Contact us: </h4>
+	<br/>
+	<b>Email:</b> example@example.com
+	<br/>
+	<b>Phone Number: </b> 123-456-7891
+	<br/>
 	
-	<div class = "col-xs-6 col-md-4">
-	Social Media:
+	<h4 class = "footerH4">Connect with us: </h4>
 	<br/>
-	Twitter:
-	<br/>
-	<br/>
-	Facebook:
-	</div>
-	</div>
+	<!--Twitter-->
+	<a href = "https://twitter.com"><img class = "socialMediaBtn" src = "images/twitter button.png"/></a>
+	
+	<!--Facebook-->
+	
+	<a href = "http://www.facebook.com"><img class = "socialMediaBtn" src = "images/facebook button.png"/></a>
+	
+	<!--Google Plus-->
+	 
+	<a href = "http://plus.google.com"><img class = "socialMediaBtn" src = "images/google plus button.png"/></a>
+	
 	</footer>
 </html>

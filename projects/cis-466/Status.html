@@ -38,7 +38,7 @@
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/WireFrame.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/WireFrame2.css" />
 	
 
     
@@ -49,7 +49,7 @@
     <br />
 	
 	<!--Navigation Bar-->
-        <nav class="navbar navbar-fixed-top">
+          <nav class="navbar navbar-fixed-top">
 	<div class = "container-fluid">
 	
 	<div class="navbar-header">
@@ -64,14 +64,24 @@
    
     </div>
 	
-	
-			
 		
 		  <div class="collapse navbar-collapse" id="navbar-collapse">
 		  
                 <ul class="nav nav-pills navbar-right">
                    <li class ="active">
-                        <a href="index.html" class="page-scroll">Home</a>
+                        <a class = "dropdown-toggle" data-toggle = "dropdown" href="index.html" class="page-scroll">Home
+						
+						 <span class ="caret"> </span> </a>
+
+                        <ul class ="dropdown-menu">
+						<li>  <li><a href = "index.html#home"> About </a></li>
+                            <li><a href = "index.html#MissionStatement"> Mission Statement </a></li>
+							 <li><a href = "index.html#MissionStatement"> Who We Are </a></li>
+						<li><a href = "index.html#FAQ"> FAQ </a></li>
+                            <li><a href="index.html#Sponsors">Sponsors</a></li>
+
+                        </ul>
+                         
                     </li>
                     <li>
 					
@@ -105,9 +115,7 @@
                     <li>
                         <a href="Status.html" class="page-scroll">Service Status</a>
                     </li>
-                    <li>
-                        <a href="Contact.html" class="page-scroll">Contact Page</a>
-                    </li>
+                   
                 </ul>
 				</div>
             </div>
@@ -122,8 +130,64 @@
         <div class="container-fluid">
             <div class="row-fluid">
                 <div class="col-lg-12"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <body>
+		
+		<div class="container-fluid" onsubmit="tNum()">
+		
+			<div class="row">
+			
+				<div class="col-md-1"></div>
+				<div class="col-md-7 text-center"><h1>Submit A Request For Support</h1></div>
+				<div class="col-md-3 text-center"><h1>Latest Status Updates</h1></div>
+				<div class="col-md-1"></div>
+			
+			</div>
+			
+			<div class="row">
+				
+				<div class="col-md-1"></div>
+				<div class="col-md-6">
+				
+					
+					
+					<form id="ticketForm" action="contact.php" method="post">
+						Bronco Name
+							<input type="text" name="email"> @cpp.edu<br>
+						Name 
+							<input type="text" name="name">
+						Affected File
+						 	<select name="select">
+				  			<option value="pro1">Project One</option>
+				  			<option value="pro2">Project Two</option>
+				  			<option value="pro3">Project Three</option>
+				  			<option value="pro4">Project Four</option>
+							</select>
+						Issue(s) You Wish To Report
+							<br>
+				 			<input name="choice" type="radio" value="Access"> Unable to Access File 
+				 			<input type="radio" name="choice" value="Modify"> Unable to Modify File
+				 			<input type="radio" name="choice" value="Other"> Other
+							<br>
+						Additional Information<br>
+							<textarea name="message" rows="10" cols="100" spellcheck="true" lang="eng">Please describe your issue(s) in greater detail so that we may better assist you.</textarea><br>
+						
+							<input type="submit" value="Send">
+							<input type="reset" value="Clear">
+						</form>
+						
+				
+			
+					</div>
+					<div class="col-md-4 text-right">
+						
+				    	<a class="twitter-timeline" href=" https://twitter.com/sdcHelp" data-width="300" data-height="350" data-chrome="noheader, nofooter">Latest Service Updates</a> <script async src=" http://platform.twitter.com/widgets.js" charset="utf-8" ></script><br>
+					</div>
+					
+				</div>
+			
+				<div class="col-md-1"></div>	
+			</div>>
+
             </div>
         </div>
 		</div>
@@ -138,52 +202,32 @@
         </div>
     </section>
     <br />
-	<footer>fn Solutions©</footer>
-    <script>
-        //Code from Jason Pittman
-        //modules are containers for angular artifacts
-        //bound to the view through ng-app=""
-        angular.module('guessTheNumber', [])
-        .controller('GuessTheNumberController', GuessTheNumberController); //register the controller as an artifact
-        
-        //controller definition
-        function GuessTheNumberController($scope) {
-            //controll method 1
-            $scope.verifyGuess = function () {
-                $scope.verification = $scope.guess - $scope.randomNumber;
-                $scope.numOfGuesses++;
-            }
-            //controller method 2
-            $scope.startGame = function () {
-                $scope.randomNumber = Math.floor((Math.random() * 5000) + 500); //get a random number 500-5000
-                $scope.guess = null;
-                $scope.verification = null;
-                $scope.numOfGuesses = 0;
-            }
-            //execute the startGame method when the angular app loads
-            $scope.startGame();
-        }
 
-        //from: https://css-tricks.com/snippets/jquery/smooth-scrolling/
-        $(function () {
-            $('a[href*="#"]:not([href="#"])').click(function () {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html, body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-            });
-        });
-		
-		
-		
-					
-
-    </script>
 </body>
+<footer>
+<h4 class = "footerH4">© Cal Poly Pomona 2016</h4>
+<br/>
+	
+	<h4 class = "footerH4">Contact us: </h4>
+	<br/>
+	<b>Email:</b> example@example.com
+	<br/>
+	<b>Phone Number: </b> 123-456-7891
+	<br/>
+	
+	<h4 class = "footerH4">Connect with us: </h4>
+	<br/>
+	<!--Twitter-->
+	<a href = "https://twitter.com"><img class = "socialMediaBtn" src = "images/twitter button.png"/></a>
+	
+	<!--Facebook-->
+	
+	<a href = "http://www.facebook.com"><img class = "socialMediaBtn" src = "images/facebook button.png"/></a>
+	
+	<!--Google Plus-->
+	 
+	<a href = "http://plus.google.com"><img class = "socialMediaBtn" src = "images/google plus button.png"/></a>
+	
+	</footer>
+</html>
 </html>

@@ -38,7 +38,7 @@
     <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="CSS/WireFrame.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/WireFrame2.css" />
 	
 
     
@@ -63,20 +63,20 @@
    
     </div>
 	
-	
-			
 		
 		  <div class="collapse navbar-collapse" id="navbar-collapse">
 		  
                 <ul class="nav nav-pills navbar-right">
                    <li class ="active">
-                        <a class = "dropdown-toggle" data-toggle = "dropdown" href="index.html" class="page-scroll">Home</a>
+                        <a class = "dropdown-toggle" data-toggle = "dropdown" href="index.html" class="page-scroll">Home
 						
 						 <span class ="caret"> </span> </a>
 
                         <ul class ="dropdown-menu">
+						<li>  <li><a href = "index.html#home"> About </a></li>
                             <li><a href = "index.html#MissionStatement"> Mission Statement </a></li>
-						<li><a href = "index.html#Faq"> FAQ </a></li>
+							 <li><a href = "index.html#WhoWeAre"> Who We Are </a></li>
+						<li><a href = "index.html#FAQ"> FAQ </a></li>
                             <li><a href="index.html#Sponsors">Sponsors</a></li>
 
                         </ul>
@@ -114,14 +114,13 @@
                     <li>
                         <a href="Status.html" class="page-scroll">Service Status</a>
                     </li>
-                    <li>
-                        <a href="Contact.html" class="page-scroll">Contact Page</a>
-                    </li>
+                   
                 </ul>
 				</div>
             </div>
 		
     </nav>
+	
 	
 	
     
@@ -130,11 +129,13 @@
       
             <div class="row-fluid">
                 <div class="col-lg-12">
-                <h1>Volunteering</h1>
+               
 				<div id = "volunteerDiv">
 				  <div class="container-fluid">
                    <div class="row-fluid">
-                <div class="col-lg-12"></div>
+                <div class="col-lg-12">
+				<h1 id = "volunteerH1">Volunteering</h1>
+				<h2> We believe YOU can make a difference! </h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
@@ -142,7 +143,10 @@
             </div>
         </div>
 		</div>
+		</div>
 		
+		
+		<!--Second Section containing info on Open Positions -->
     </section>
     <section id="OpenPositions" class="tmw-section">
         <div class="container-fluid contPositions">
@@ -150,55 +154,43 @@
                 <div id="PositionsDiv" class="col-lg-12">
                     <h1>Open Positions</h1>
 					
-					<div class = "col-xs-6 col-md-4"> 
-				<div class= "Card">
-					<img src = "images/SamplePosition1.jpg" class = "imgPosition" alt = "Avatar" style = "width:75%"/>
-					<div class = "row-fluid">
-					<div class = "container-fluid cardcontainer-fluid">
-					<h4> Front-End Software Engineer </h4>
-					<div class = "cardContent">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+					
+					<center>
+					<div class = "position">
+					<img class ="positionImg" src = "images/position1.jpg"/>
+					<h2 class = "positionTitle">Technician</h2>
+					<p class = "positionDesc">
+					
+					Hello
+					</p>
+					
 					</div>
+					</center>
+					<div class = "position">
+					<img class ="positionImg" src = "images/position2.jpg"/>
+					<h2 class = "positionTitle">Help Desk Support</h2>
+					<p class ="positionDesc">
+					Hi
+					</p>				
+					</p>				
+</div>
+
+					 
+    
+    <span class="whiteDot part" onclick="currentDiv(1)"></span>
+    <span class="whiteDot part" onclick="currentDiv(2)"></span>
+    <span class="whiteDot part" onclick="currentDiv(3)"></span>
+  </div>
+					
 					</div>
-                </div>
-				</div>
-				</div>
-			
-					<div class = "col-xs-6 col-md-4"> 
-				<div class= "Card">
-					<img src = "images/SamplePosition2.jpg" class = "imgPosition" alt = "Avatar" style = "width:75%"/>
-					<div class = "row-fluid">
-					<div class = "container-fluid cardcontainer-fluid">
-					<h4> Technical Support </h4>
-					<div class = "cardContent">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-					</div>
-					</div>
-                </div>
-				</div>
-				</div>
-				
-				
-					<div class = "col-xs-6 col-md-4"> 
-				<div class= "Card">
-					<img src = "images/SamplePosition3.jpg" class = "imgPosition" alt = "Avatar" style = "width:75%"/>
-					<div class = "row-fluid">
-					<div class = "container-fluid cardcontainer-fluid">
-					<h4> Networking Engineer </h4>
-					<div class = "cardContent">
-					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-					</div>
-					</div>
-                </div>
-				</div>
-				</div>
+		
             </div>
         </div>
 		</div>
     </section>
    
     <br />
-	<footer>fn Solutions©</footer>
+	
     <script>
         //Code from Jason Pittman
         //modules are container-fluids for angular artifacts
@@ -241,5 +233,68 @@
         });
 
     </script>
+	
+	<script>
+ //Slideshow Positions
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("position");
+  var dots = document.getElementsByClassName("part");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace("whiteDot" , "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " whiteDot";
+}
+</script>
+
+
+<script>
+//Slideshow extension animation
+$(document).ready(function(){
+$("leftArrow"}.click(function(){
+$("PositionsDiv").animate({width:"100%"})
+</script>
+	<footer>
+<h4 class = "footerH4">© Cal Poly Pomona 2016</h4>
+<br/>
+	
+	<h4 class = "footerH4">Contact us: </h4>
+	<br/>
+	<b>Email:</b> example@example.com
+	<br/>
+	<b>Phone Number: </b> 123-456-7891
+	<br/>
+	
+	<h4 class = "footerH4">Connect with us: </h4>
+	<br/>
+	<!--Twitter-->
+	<a href = "https://twitter.com"><img class = "socialMediaBtn" src = "images/twitter button.png"/></a>
+	
+	<!--Facebook-->
+	
+	<a href = "http://www.facebook.com"><img class = "socialMediaBtn" src = "images/facebook button.png"/></a>
+	
+	<!--Google Plus-->
+	 
+	<a href = "http://plus.google.com"><img class = "socialMediaBtn" src = "images/google plus button.png"/></a>
+	
+	</footer>
 </body>
 </html>

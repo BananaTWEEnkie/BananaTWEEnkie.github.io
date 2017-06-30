@@ -2,20 +2,22 @@
 /*Navigation layout*/
 .navbar {
     width: 100%;
-    margin: auto;
-	background-color: #2E428A;
-	font-family: Helvetica;
+    margin-left: auto;
+	margin-right: auto;
+	background-color: #0358B2;
+	font-family: 'Lato', sans-serif;
 	font-size: 2.2vmin;	
 	
 }
 
-.icon-bar {
-	color:white;
-}
+.navbar-toggle .icon-bar{ 
+background-color: yellow;
+} 
+
 
 .dropdown-menu {
-	font-size: 12pt;
-	font-family: Helvetica;
+	font-size: 2.2vmin;
+	font-family: 'Roboto', sans-serif;
 	
 }
 
@@ -25,7 +27,7 @@
 }
 
 a {
-    color: #E3D025;  
+    color: white;  
 }
 
 .logo {
@@ -41,32 +43,24 @@ a {
 /*General body layout*/
 body {
 	
-    background-color: #DAEBE9;
+    background-color: #0A96B1;
     height: 100%;
     width: 100%;
 }
 section {
-    background-color: rgba(49, 143, 72, 0.6);
+    background-color: rgba(10, 150, 177, 1);
     height: 100%;
     width: 100%;
     position: center;
     color: white;
-  
-	/* border-left: 1px solid black;
-	border-right: 1px solid black; */
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.8);
+	font-family: 'Lato', sans-serif;
 	
 }
 
-tmw-section{
-	margin-top: 10px;
-	
-	
-}
+
 div.container {
-    margin: auto;
-    height: 70%;
-    width: 80%;    
+    height: 100%;
+    width: 100%;    
 }
 div.col-lg-12 {
     text-align: center;
@@ -74,11 +68,17 @@ div.col-lg-12 {
 
 h1 {
 	padding-top: 1%;
-	font-family: Impact;
-	font-style: oblique;
-	color: yellow;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: white;
 	font-size: 4.5vw;
 	text-shadow: 2px 2px #000000;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight:bold;
+	font-size: 1.6vw;
 }
 
 
@@ -86,93 +86,109 @@ h1 {
 
 /*Home Section*/
 #home {
-	
-	background-image:url(SampleAboutBackground3.jpg);`
+	margin-bottom:-4%;
+	background-image:url(SampleAboutBackground4.png);`
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position:center;
 	padding: 10%;
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
-	
-	/* -moz-border-radius: 5%;
-	-webkit-border-radius: 5%;
-	border-radius: 5%; */
 	
 }
 
-#home:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
-}
+
 
 .homeH1 {
 	margin-bottom: -3px;
 }
 
 #homeDiv {
-	
-	background-color: rgba(49, 143, 72, 0.6);
-	width: 75%;
-	height: 75%;
+	background-color: rgba(100, 109, 205, 0.6);
+	width: 70%;
+	height: 70%;
 	-moz-border-radius: 5%;
 	-webkit-border-radius: 5%;
 	border-radius: 5%;
-	font-family: Helvetica;
-	font-size: 2.0vmin;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.5vmin;
 	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+	padding: 1%;
+}
+
+#homeDiv:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
+}
+
+.aboutContent{
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5vw;
+	margin-left: 100px;
+	margin-right: 100px;
+	
 }
 
 /*Mission Statement Section*/
 
 #MissionStatement {
 	
-	background-image: url(SampleAboutBackground.png);
+	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	/* -moz-border-radius: 50px;
-	-webkit-border-radius: 50px; */
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
 	height: 40%;
 }
 	
  #missionH1 {
-	margin-bottom: -5px;
+	margin-bottom: -3px;
 }
 
 
 
-#MissionStatement:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
-}
+
 
 #missionDiv {
 	padding-top: -30%;
-	background-color: rgba(49, 143, 72, 0.6);
+	background-color: rgba(100, 109, 205, 0.6);
 	width: 80%;
 	color: black;
 	margin:auto;
 	box-shadow:0 5px 9px 0 rgba(0, 0, 0, 0.4);
+	font-size: 1.8vw;
+	color: white;
 }
 
 blockquote {
-	font-size: 1.7vw;
-	color: white;
+	
+}
+
+/*Who we are section*/
+
+#WhoWeAre {
+	height: 100%;
+	background-color: navy;
+	background-size: cover;
+}
+
+.imgEmployee {
+	width: 50%;
+	align: center;
+	-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+	
 }
 
 
 /*FAQ Section*/
 #FAQ{
 	
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
-	height: 70%;
-	background-image: url(SampleFaqBg.png);
-	background-size: cover;
+	height: 100%;
+/* 	background-image: url(SampleFaqBg.png);
+	background-size: cover; */
 	padding-left: -2%;
 }
 
-#FAQ:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
-}
+
 
 
 
@@ -182,7 +198,7 @@ blockquote {
 
 #aboutcontent {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
 	
 }
 
@@ -193,17 +209,19 @@ blockquote {
 
 .panel:hover {
 	box-shadow: 0 5px 9px 0 rgba(255, 255, 255, 0.5);
+	background-color: #678F99;
+	transition-duration: 0.5s;
 }
 
 .panel-custom{
 	color: white;
-	background-color: green;
+	background-color: blue;
 }
 
 .panel-body {
 	color: white;
 	text-align: left;
-	font-size: 15pt;
+	font-size: 2.4vmin;
 	background-color:black;
 	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
 }
@@ -215,23 +233,32 @@ blockquote {
 
 .panel-title {
 	text-align:left;
-	font-size: 2vmin;
+	font-size: 2.4vmin;
 	
 	
 }
 
+/*Contributors section*/
+#Contributors {
+	border-color: yellow;
+	border-style: double;
+	border-width:5px;
+	margin: auto;
 
+	background-size: cover;
+}
 /*Sponsors section*/
 #Sponsors{
-	
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
-	
+	border-color: yellow;
+	border-style: double;
+	border-width: 5px;
+    margin: auto;
 	height: 70%;
+
+	background-size: cover;
 }
 
-#Sponsors:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
-}
+
 
 /*Set sponsor image sizes*/
 .sponsorImg {
@@ -253,25 +280,40 @@ blockquote {
 
 /*Volunteering Page*/
 #Volunteering{
-	
-	
+	background-image: url("SampleVolunteerBg.jpg");
 	background-position: center;
 	background-size: cover;
-	
+	height: 100%;
+	width: 100%;
+	margin-top: -2%;
+}
+
+#volunteerDiv {
+	background-color : rgba(100, 109, 205, 0.6);
+	width: 75%;
+	height: 75%;
+	margin: auto;
+	font-size: 2.0vmin;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
+}
+
+#volunteerDiv:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
 }
 
 /*Settings for Open positions*/
 #OpenPositions{
-	
+	height: 100%;
 	
 }
-/*Card settings for open positions */
+/*Card settings for employees and open positions */
 .Card {
 	box-shadow:  0 4px 7px 0 rgba(0, 0, 0, 0.2);
-	background-color: #2674E3;
+	background-color: rgba(100, 109, 205, 0.6);
 	transition: 0.3s;
 	margin: 10px;
 	border: 1px solid black;
+	font-size: 2.0vmin;
 }
 
 
@@ -303,17 +345,31 @@ blockquote {
 }
 
 
+
 /*Footer layout*/
 footer {
 	margin:auto;
 	text-align: center;
-	font-size: 14px;
-	font-family: Helvetica;
+	font-size: 2vmin;
+	font-family: 'Lato', sans-serif;
     color: white;
-    height: 20%;
+    height: 30%;
     width: 100%;
-    background-color: #2E428A;
+    background-color: #030CB2;
     padding: 15px;
-    position: static;
-
+   margin-top: -2%;
 }
+
+.footerH4 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: bold;
+	margin-bottom: -1%;
+	
+}
+
+.socialMediaBtn {
+	max-width: 42px;
+	max-height: 42px;
+}
+

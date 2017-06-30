@@ -2,20 +2,24 @@
 /*Navigation layout*/
 .navbar {
     width: 100%;
-    margin: auto;
-	background-color: #2E428A;
-	font-family: Helvetica;
+    margin-left: auto;
+	margin-right: auto;
+	background-color: #16962D;
+	font-family: 'Lato', sans-serif;
 	font-size: 2.2vmin;	
 	
 }
 
-.icon-bar {
-	color:white;
-}
+.navbar-toggle .icon-bar{ 
+background-color: yellow;
+} 
+
+
+
 
 .dropdown-menu {
-	font-size: 12pt;
-	font-family: Helvetica;
+	font-size: 2.2vmin;
+	font-family: 'Roboto', sans-serif;
 	
 }
 
@@ -25,7 +29,7 @@
 }
 
 a {
-    color: #E3D025;  
+    color: white;  
 }
 
 .logo {
@@ -41,250 +45,399 @@ a {
 /*General body layout*/
 body {
 	
-    background-color: #DAEBE9;
+    background-color: #005E1A;
     height: 100%;
-    padding: 5px;
+    width: 100%;
+
 }
 section {
-    background-color: rgba(49, 143, 72, 0.6);
+    background-color:#005E1A;
     height: 100%;
-    width: 80%;
+    width: 100%;
     position: center;
     color: white;
-    margin: auto;
-	/* border-left: 1px solid black;
-	border-right: 1px solid black; */
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.8);
+	font-family: 'Lato', sans-serif;
+	padding: 1%;
 	
 }
 
-tmw-section{
-	margin-top: 10px;
-	
-	
-}
+
 div.container {
-    margin: auto;
-    height: 70%;
-    width: 80%;    
+    height: 100%;
+    width: 100%;    
+	display: flex;
 }
 div.col-lg-12 {
     text-align: center;
 }
 
 h1 {
-	padding-top: 1%;
-	font-family: Impact;
-	font-style: oblique;
-	color: yellow;
-	font-size: 4.5vw;
-	text-shadow: 2px 2px #000000;
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	text-decoration: underline;
+	font-size: 4.0vw;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight:bold;
+	font-size: 3.2vmin;
 }
 
 
 /*Individual sections and containers*/
 
 /*Home Section*/
+/* Home Animations */
+@keyframes FadeIn {
+	from {color: transparent;}
+	to {color: white;}
+}
+
+/*Home content*/
 #home {
-	background-image:url(SampleAboutBackground2.jpg);`
+	margin-bottom:-4%;
+	background-image:url(HomeBg2.png);`
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position:center;
 	padding: 10%;
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
-	margin-top: 2%;
-	/* -moz-border-radius: 5%;
-	-webkit-border-radius: 5%;
-	border-radius: 5%; */
+	color: white;
 	
 }
 
-#home:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
-}
+
 
 .homeH1 {
 	margin-bottom: -3px;
+	padding-top: 1%;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 4.5vw;
+	text-shadow: 2px 2px #000000;
+	animation-name: FadeIn;
+	animation-duration: 3s;
+
 }
 
 #homeDiv {
-	
-	background-color: rgba(49, 143, 72, 0.6);
-	width: 75%;
-	height: 75%;
+	background-color: rgba(100, 109, 205, 0.6);
+	width: 70%;
+	height: 70%;
 	-moz-border-radius: 5%;
 	-webkit-border-radius: 5%;
 	border-radius: 5%;
-	font-family: Helvetica;
-	font-size: 2.0vmin;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.5vmin;
 	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+	padding: 1%;
+	
+}
+
+#homeDiv:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
+}
+
+.aboutContent{
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5vw;
+	margin-left: 100px;
+	margin-right: 100px;
+	animation-name: FadeIn;
+	animation-duration: 5s;
+	
 }
 
 /*Mission Statement Section*/
 
+
+
 #MissionStatement {
-	margin-top: 2%;
-	background-image: url(SampleAboutBackground.png);
+	margin: 5px;
+    background-color:#ACC281;
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	/* -moz-border-radius: 50px;
-	-webkit-border-radius: 50px; */
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
-	height: 40%;
+	height: 60%;
 }
 	
  #missionH1 {
-	margin-bottom: -5px;
+	margin-bottom: -2%;
+	animation-name: drop;
+	animation-duration: 4s;
+}
+
+#missionH1Div {
+	text-align: center;
+	float: left;
+	margin-right: 50%;
+	display: inline-block;
+}
+
+.MissionContent {
+	margin-top: -2%;
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.8vw;
+	border: 1pt double black;
+	color: black;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+	background-color: white;
+	
+	
+}
+
+.MissionContent:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.9);
 }
 
 
-
-#MissionStatement:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
-}
 
 #missionDiv {
-	padding-top: -30%;
-	background-color: rgba(49, 143, 72, 0.6);
-	width: 80%;
-	color: black;
-	margin:auto;
-	box-shadow:0 5px 9px 0 rgba(0, 0, 0, 0.4);
+	
+	float: right;
+	
 }
 
-blockquote {
-	font-size: 1.7vw;
-	color: white;
+
+/*Who we are section*/
+
+#WhoWeAre {
+	padding-top: 10px;
+	height: 100%;
+	margin: 5px;
+	margin-top: 50px;
+	background-size: cover;
+	background-color: #005E1A;
+	object-fit: contain;
+	overflow: auto;
+	padding-bottom: 10px;
 }
+
+.imgEmployee {
+	width: 50%;
+	align: center;
+	-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+	padding: 2px;
+	color: white;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+#employeeHeading {
+	font-style: 'Lato', sans-serif;
+	font-size: 2.0vw;
+	text-align: center;
+}
+
+#EmployeeDetails{
+	text-align: center;
+	color: white;
+	padding: 1%;
+	font-style: 'Oswald', sans-serif;
+	font-size: 1.4vw;
+	
+}
+
+
 
 
 /*FAQ Section*/
 #FAQ{
-	margin-top: 20px;
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
-	height: 70%;
-	background-image: url(SampleFaqBg.png);
+	margin-top: 150px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	height: 100%;
+	background-image: url(faqbg3.png);
 	background-size: cover;
 	padding-left: -2%;
+	 background-color:#3b4d66;
+
 }
 
-#FAQ:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
+
+
+.faqCard {
+	width: 100%;
+	background-color: green;
+	color: white;
+	text-align: left;
+	font-size: 1.4vw;
+	margin-bottom: 5%;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
 }
 
+.faqCard:hover {
+	width: 100%;
+	background-color: #19B234;
+	color: white;
+	text-align: left;
+	font-size: 1.6vw;
+	margin-bottom: 5%;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.6);
+}
 
+.faqQuestion{
+	padding: 3px;
+	font-size: 1.6vw;
+	color: white;
+	text-align: center;
+	height: 35px;
+}
 
-#faqContent {
-
+.faqAnswer {
+	padding-top: -2%;
+	background-color:blue;
+	font-size: 1.4vw;
 }
 
 #aboutcontent {
     text-align: center;
-    padding-top: 20px;
-	
-}
-
-.panel {
-	background-color:white;
-	box-shadow: 0 5px 9px 0 rgba(255, 255, 255, 0.3);
-}
-
-.panel:hover {
-	box-shadow: 0 5px 9px 0 rgba(255, 255, 255, 0.5);
-}
-
-.panel-custom{
-	color: white;
-	background-color: green;
-}
-
-.panel-body {
-	color: white;
-	text-align: left;
-	font-size: 15pt;
-	background-color:black;
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
-}
-
-.panel-body:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.6);
-	font-size: 2vmin;
-}
-
-.panel-title {
-	text-align:left;
-	font-size: 2vmin;
-	
+    padding-top: 0px;
 	
 }
 
 
+/*Contributors section*/
+#Contributors {
+	
+	margin: auto;
+	
+}
+
+#contributorDiv {
+	width: 80%;
+	height: 40%;
+	overflow-x: scroll;
+	background-size: cover;
+	color: black;
+	font: 'Lato' , sans-serif;
+	border-color: yellow;
+	border-style: double;
+	border-width:5px;
+	margin: auto;
+}
 /*Sponsors section*/
 #Sponsors{
-	margin-top: 20px;
-	margin-bottom: 2%;
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.4);
-	padding-top: 2%;
-	height: 65%;
+	
+	border-width: 5px;
+    margin: auto;
+	height: 70%;
+	background-color: #005E1A;
+	background-size: cover;
 }
 
-#Sponsors:hover {
-	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
-}
+
 
 /*Set sponsor image sizes*/
 .sponsorImg {
 	max-width: 45%;
 	max-height: auto;
+	padding-bottom: 40px;
+	
 }
+
+.sponsorImg:hover {
+	
+	transition-duration: 1s;
+}
+
+
+
+
 
 /* #positionsDiv {
 	background-color: #E3D025;
 }
  */
 
+
+
+/*Volunteering Page*/
+#Volunteering{
+	background-image: url("VolunteerBg2.png");
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin-top: -2%;
+		
+}
+
+#volunteerH1{
+	padding-bottom: -4%;
+	animation-name: FadeIn;
+	animation-duration: 5s;
+	font-weight: bold;
+	text-align: center;
+}
+
+#volunteerDiv {
+	margin-top: 4%;
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5vw;
+	font-weight: bold;
+
+	animation-name: FadeIn;
+	animation-duration: 5s;
+	color: white;
+	margin-right: 50px;
+}
+
+
+
 /*Settings for Open positions*/
 #OpenPositions{
-	margin-top: 20px;
+	height: 100%;
+	margin: auto;
+	padding-bottom: 150px;
+}
+
+.position{
+	width: 100%;
+}
+
+.positionImg{
+	margin-top: 50px;
+	max-width: 400px;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
 	
 }
-/*Card settings for open positions */
-.Card {
-	box-shadow:  0 4px 7px 0 rgba(0, 0, 0, 0.2);
-	background-color: #2674E3;
-	transition: 0.3s;
-	margin: 10px;
-	border: 1px solid black;
+
+.positionTitle {
+	font-size: 2.0vw;
+	font-family: 'Oswald', sans-serf;
+	text-align: center;
+}
+
+.positionDesc{
+	margin-top: 45px;
+	font-size: 1.4vw;
+	font-family: 'Lato', sans-serif;
+	background-color: green;
+	width: 70%;
+	margin-bottom: 100px;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.6);
 }
 
 
-.Card:hover {
-	box-shadow:  0 4px 7px 0 rgba(0, 0, 0, 0.8);
-	background-color: light-blue;
-}
-
-.midCol {
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-
-}
 
 
-.cardContainer {
-	width: 20%;
-	height: 25%;
-	padding-top: 2%;
-}
 
-.imgPosition {
-	border: 1px solid black;
-	margin-top: 5px;
-}
-
-.cardContent {
-	font-size: 2vmin;
-}
 
 
 
@@ -292,14 +445,29 @@ blockquote {
 
 /*Footer layout*/
 footer {
-	text-align: center;
-	font-size: 14px;
-	font-family: Helvetica;
-    color: white;
-    height: 20%;
-    width: 100%;
-    background-color: #2E428A;
-    padding: 15px;
-    position: static;
+	
 
+	text-align: center;
+	font-size: 2vmin;
+	font-family: 'Lato', sans-serif;
+    color: white;
+    height: 40%;
+    width: 100%;
+    background-color: #16962D;
+    padding: 15px;
+    margin-top: 140px;
 }
+
+.footerH4 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: bold;
+	margin-bottom: -1%;
+	
+}
+
+.socialMediaBtn {
+	max-width: 42px;
+	max-height: 42px;
+}
+
