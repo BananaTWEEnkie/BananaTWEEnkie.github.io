@@ -36,7 +36,6 @@ a:hover {
 body {
 	background-color: white;
 	color: #323232;
-	margin: 25px;
    font-size: 1.63rem;
 	font-family: 'Lato', sans-serif;
 	  -webkit-transition: background-color 2s ease, color 2s ease;
