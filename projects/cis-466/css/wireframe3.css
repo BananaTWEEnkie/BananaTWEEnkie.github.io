@@ -1,0 +1,474 @@
+
+/*Navigation layout*/
+.navbar {
+    width: 100%;
+    margin-left: auto;
+	margin-right: auto;
+	background-color: #0358B2;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.2vmin;	
+	
+}
+
+.navbar-toggle .icon-bar{ 
+background-color: yellow;
+} 
+
+
+
+
+.dropdown-menu {
+	font-size: 2.2vmin;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.nav-pills {
+	padding-top:10px;
+	display:inline-block;
+}
+
+a {
+    color: white;  
+}
+
+.logo {
+	max-width:150px;
+	max-height:100px;
+	display: inline-block;
+	float:left;
+}
+
+
+
+
+/*General body layout*/
+body {
+	
+    background-color: #034B98;
+    height: 100%;
+    width: 100%;
+
+}
+section {
+    background-color: #034B98;
+    height: 100%;
+    width: 100%;
+    position: center;
+    color: white;
+	font-family: 'Lato', sans-serif;
+	padding: 1%;
+	
+}
+
+
+div.container {
+    height: 100%;
+    width: 100%;    
+	display: flex;
+}
+div.col-lg-12 {
+    text-align: center;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	color: white;
+	
+	font-size: 4.0vw;
+}
+
+h4 {
+	font-family: 'Lato', sans-serif;
+	font-weight:bold;
+	font-size: 3.2vmin;
+}
+
+
+/*Individual sections and containers*/
+
+/*Home Section*/
+/* Home Animations */
+@keyframes FadeIn {
+	from {color: transparent;}
+	to {color: white;}
+}
+
+/*Home content*/
+#home {
+	margin-bottom:-4%;
+	background-image:url(HomeBg2.png);`
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	padding: 10%;
+	color: white;
+	
+}
+
+
+
+.homeH1 {
+	margin-bottom: -3px;
+	padding-top: 1%;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	color: white;
+	font-size: 4.5vw;
+	text-shadow: 2px 2px #000000;
+	animation-name: FadeIn;
+	animation-duration: 3s;
+
+}
+
+#homeDiv {
+	background-color: rgba(100, 109, 205, 0.6);
+	width: 70%;
+	height: 70%;
+	-moz-border-radius: 5%;
+	-webkit-border-radius: 5%;
+	border-radius: 5%;
+	font-family: 'Lato', sans-serif;
+	font-size: 2.5vmin;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+	padding: 1%;
+	
+}
+
+#homeDiv:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.8);
+}
+
+.aboutContent{
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5vw;
+	margin-left: 100px;
+	margin-right: 100px;
+	animation-name: FadeIn;
+	animation-duration: 5s;
+	
+}
+
+/*Mission Statement Section*/
+
+@keyframes {
+	
+}
+
+#MissionStatement {
+	margin: 5px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 40%;
+}
+	
+ #missionH1 {
+	margin-bottom: -2%;
+	animation-name: drop;
+	animation-duration: 4s;
+}
+
+#missionH1Div {
+	text-align: center;
+	float: left;
+	margin-right: 50%;
+	display: inline-block;
+}
+
+.MissionContent {
+	margin-top: -2%;
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2.8vw;
+	border: 1pt double black;
+	color: black;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.5);
+	background-color: white;
+	
+	
+}
+
+.MissionContent:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.9);
+}
+
+
+
+#missionDiv {
+	
+	float: right;
+	
+}
+
+
+/*Who we are section*/
+
+#WhoWeAre {
+	padding-top: 40px;
+	height: 100%;
+	margin: 5px;
+	margin-top: 50px;
+	background-size: cover;
+}
+
+.imgEmployee {
+	width: 50%;
+	align: center;
+	-moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+	padding: 2px;
+	
+}
+
+.imgEmployee:hover {
+	-moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+	
+}
+
+
+
+#employeeHeading {
+	font-style: 'Lato', sans-serif;
+	font-size: 2.0vw;
+	text-align: center;
+}
+
+#EmployeeDetails{
+	text-align: center;
+	color: white;
+	padding: 1%;
+	font-style: 'Oswald', sans-serif;
+	font-size: 1.4vw;
+	
+}
+
+
+
+
+/*FAQ Section*/
+#FAQ{
+	margin-top: 150px;
+	padding-top: 150px;
+	height: 100%;
+/* 	background-image: url(SampleFaqBg.png);
+	background-size: cover; */
+	padding-left: -2%;
+
+}
+
+
+
+#faqContent {
+
+}
+
+#aboutcontent {
+    text-align: center;
+    padding-top: 0px;
+	
+}
+
+.panel {
+	background-color:white;
+	box-shadow: 0 5px 9px 0 rgba(255, 255, 255, 0.3);
+}
+
+.panel:hover {
+	box-shadow: 0 5px 9px 0 rgba(255, 255, 255, 0.5);
+	background-color: #4995E5;
+	transition-duration: 0.5s;
+}
+
+.panel-custom{
+	color: white;
+	background-color: blue;
+}
+
+.panelFaq {
+	color: white;
+	text-align: left;
+	font-size: 2.4vmin;
+	background-color:black;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.panel-body {
+	font-size: 2.0vmin;
+}
+
+.panel-body:hover {
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.6);
+
+}
+
+.panel-title {
+	text-align:left;
+	font-size: 2.4vmin;
+	
+	
+}
+
+/*Contributors section*/
+#Contributors {
+	
+	margin: auto;
+	
+}
+
+#contributorDiv {
+	width: 80%;
+	height: 40%;
+	overflow-x: scroll;
+	background-size: cover;
+	color: black;
+	font: 'Lato' , sans-serif;
+	border-color: yellow;
+	border-style: double;
+	border-width:5px;
+	margin: auto;
+}
+/*Sponsors section*/
+#Sponsors{
+	color: blal
+	border-width: 5px;
+    margin: auto;
+	height: 100%;
+    background-color: #A4C9CF;
+	background-size: cover;
+}
+
+
+
+/*Set sponsor image sizes*/
+.sponsorImg {
+	max-width: 45%;
+	max-height: auto;
+	padding-bottom: 40px;
+}
+
+.sponsorImg:hover {
+	
+	transition-duration: 1s;
+}
+
+
+
+
+
+/* #positionsDiv {
+	background-color: #E3D025;
+}
+ */
+
+
+
+/*Volunteering Page*/
+#Volunteering{
+	background-image: url("VolunteerBg2.png");
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	margin-top: -2%;
+		
+}
+
+#volunteerH1{
+	padding-bottom: -4%;
+	animation-name: FadeIn;
+	animation-duration: 5s;
+	font-weight: bold;
+	text-align: center;
+}
+
+#volunteerDiv {
+	margin-top: 4%;
+	padding: 2%;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5vw;
+	font-weight: bold;
+
+	animation-name: FadeIn;
+	animation-duration: 5s;
+	color: white;
+	margin-right: 50px;
+}
+
+
+
+/*Settings for Open positions*/
+#OpenPositions{
+	height: 100%;
+	margin: auto;
+	padding-bottom: 150px;
+}
+
+.position{
+	width: 100%;
+}
+
+.positionImg{
+	margin-top: 50px;
+	max-width: 400px;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+	
+}
+
+.positionTitle {
+	font-size: 2.0vw;
+	font-family: 'Oswald', sans-serf;
+	text-align: center;
+}
+
+.positionDesc{
+	margin-top: 45px;
+	font-size: 1.4vw;
+	font-family: 'Lato', sans-serif;
+	background-color: blue;
+	width: 70%;
+	margin-bottom: 100px;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+
+
+
+
+/*Footer layout*/
+footer {
+	
+
+	text-align: center;
+	font-size: 2vmin;
+	font-family: 'Lato', sans-serif;
+    color: white;
+    height: 40%;
+    width: 100%;
+    background-color: #0358B2;
+    padding: 15px;
+    margin-top: 140px;
+}
+
+.footerH4 {
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-weight: bold;
+	margin-bottom: -1%;
+	
+}
+
+.socialMediaBtn {
+	max-width: 42px;
+	max-height: 42px;
+}
+
