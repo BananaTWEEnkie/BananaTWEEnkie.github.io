@@ -27,7 +27,8 @@
 a {
 	color: #bdbdbd;
 	text-decoration: none;
-	transition: color 0.5s ease; 	}
+	transition: color 0.5s ease;
+}
 
 a:hover {
 	color: #7e7e7e;
@@ -41,18 +42,26 @@ body {
 	font-family: 'Lato', sans-serif;
 	  -webkit-transition: background-color 2s ease, color 2s ease;
   /* Safari */
-  transition: background-color 2s ease, color 2s ease; }	
+  transition: background-color 2s ease, color 2s ease;
+}	
+  
+.center {
+    margin: auto;
+    text-align: center;
+}
   
 h1 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 4.5em;
 	text-transform: uppercase;
-	display: span; }
+	display: span;
+}
 
 h3 {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
-	font-size: 1em; }
+	font-size: 1em;
+}
 
 /*
 	Button configuration for projects
@@ -64,62 +73,74 @@ h3 {
 .btn-basu {
 	background-color: #6B6D6F;
 	border-color: #58595b;
-	color: white; }
+	color: white;
+}
 
 .btn-basu:hover {
 	background-color: #4e5051;
 	border-color: #4e5051;
-	color: white; }	
+	color: white;
+}	
 	
 .btn-fb {
 	background-color: #21b4ba;
 	border-color: #21b4ba;
-	color: white; }
+	color: white;
+}
 
 .btn-fb:hover {
 	background-color: #188488;
 	border-color: #188488;
-	color: white; }
+	color: white;
+}
 
 .btn-jump {
 	background-color: #ED1386;
 	border-color: #c90f72;
-	color: white; }
+	color: white;
+}
 
 .btn-jump:hover {
 	background-color: #b70e67;
 	border-color: #b70e67;
-	color: white; }		
+	color: white;
+}		
 	
 .btn-password-test {
 	background-color: #25313F;
 	border-color: #161e26;
-	color: white; }	
+	color: white;
+}	
 
 .btn-password-test:hover {
 	background-color: #0f141a;
 	border-color: #0f141a;
-	color: white; }	
+	color: white;
+}	
 
 .btn-riot {
 	background-color: #257372;
 	border-color: #1b5555;
-	color: #FBB95B; }
+	color: #FBB95B;
+}
 
 .btn-riot:hover {
 	background-color: #174646;
 	border-color: #174646;
-	color: #FBB95B; }
+	color: #FBB95B;
+}
 
 .btn-twitch {
 	background-color: #6441A5;
 	border-color: #593a93;
-	color: white; }
+	color: white;
+}
 
 .btn-twitch:hover {
 	background-color: #4a307b;
 	border-color: #4a307b;
-	color: white; }
+	color: white;
+}
 	
 /*
 	image hover effect
@@ -157,7 +178,8 @@ figure:hover+span {
 	
 .clicked {
   background-color: #191919;
-  color: white; }
+  color: white;
+}
 
 .clicked2 {
   background-color: white;
@@ -170,7 +192,8 @@ figure:hover+span {
 
 .clicked3 {
   background-color: white;
-  color: black; }
+  color: black;
+}
   
 button {
   background-color: #4c4c4c;
