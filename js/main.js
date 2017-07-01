@@ -52,7 +52,7 @@ $(document).ready(function() {
 	function newpage() {
 		window.location = newLocation;
 	}
-}); */
+}); */ */
 
 /* Google Analtics */
 
