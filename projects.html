@@ -25,11 +25,8 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" media="all"/>	
 	<!-- Import google font -->
 	<link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
-	<!-- Import jQuery.
-		 Integrity and crossorigin allows browsers to ensure that resources on 3rd party servers aren't tampered with. -->
-	<script src="https://code.jquery.com/jquery-2.2.3.min.js"
-			integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-			crossorigin="anonymous"></script>
+	<!-- Import jQuery -->
+	<script src="js/jquery-2.2.4.min.js"></script>
 </head>
 <a target="_blank" href=""></a>
 <body>
@@ -54,7 +51,7 @@
 	</header>
 	<br/><br/>
 	<div class="container">
-		<div class="row is-flex row1">
+		<div class="row is-flex row1 animation-element slide-left">
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail hover">
 					<figure style="background-color:#21b4ba;"><img src="images/ctf.png" alt="..."/></figure>
@@ -122,7 +119,7 @@
 			</div>
 		</div>
 
-		<div class="row is-flex row2">
+		<div class="row is-flex row2 animation-element slide-left">
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail hover">
 					<figure style="background-color:#6441A5;"><img src="images/twitch-app.png" alt="..."/></figure>
@@ -193,7 +190,7 @@
 			</div>
 		</div>
 		
-		<div class="row is-flex row3">
+		<div class="row is-flex row3 animation-element slide-left">
 			<div class="col-sm-6 col-md-4">
 				<div class="thumbnail hover">
 					<figure><img src="images/snapshot.png" alt="..."/></figure>
@@ -267,6 +264,7 @@
 	
 	<!-- Put script at the end for faster loading -->
 	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
