@@ -40,19 +40,19 @@ function changeTheme() {
 	$('.tooltiptext').toggleClass('clicked3');
 }
 
-/* Upon first landing on page, let it fade in 
+/* Upon first landing on page, let it fade in */
 
 $(document).ready(function() {
-	$('body').css('display', 'none');
-	$('body').fadeIn(2000);
+	$('.is-ready').css('display', 'none');
+	$('.is-ready').fadeIn(1500);
 	$('.link').click(function() {
 		newLocation = $('.link a').attr("href");
-		$('body').fadeOut(2000, newpage);
+		$('.is-ready').fadeOut(1500, newpage);
 	});
 	function newpage() {
 		window.location = newLocation;
 	}
-}); */
+}); 
 
 /* Google Analtics */
 
