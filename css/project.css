@@ -1,29 +1,9 @@
-.thumbnail {
-  line-height: 1.3;
-  border: 1px solid #ddd;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-  	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-.thumbnail > figure > img {
-	border: 1px solid black;
-}
-
-.thumbnail figure img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}	
-
 /*~*
  *		Author: Thuy-Tien Nguyen-Tran
  *		Description: For styling my projects page
 *~*/
 
+/* Initial Settings */
 a {
 	color: #bdbdbd;
 	text-decoration: none;
@@ -45,14 +25,9 @@ body {
   transition: background-color 2s ease, color 2s ease;
 }	
   
-.center {
-    margin: auto;
-    text-align: center;
-}
-  
 h1 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 4.5em;
+	font-size: 4em;
 	text-transform: uppercase;
 	display: span;
 }
@@ -62,6 +37,37 @@ h3 {
 	text-transform: uppercase;
 	font-size: 1em;
 }
+
+/* Settings for others */
+.center {
+    margin: auto;
+    text-align: center;
+}
+
+.space { padding: 33px 0; }
+
+.tools { padding: 5px 0; }
+
+.thumbnail {
+  line-height: 1.3;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
+  	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.thumbnail > figure > img {
+	border: 1px solid black;
+}
+
+.thumbnail figure img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}	
 
 /*
 	Button configuration for projects

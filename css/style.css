@@ -3,220 +3,30 @@
  *		Description: For styling my personal webpage
 *~*/
 
-/* 
- *		Initial settings
- */
+/* Initial Settings */
 
 a {
-	color: #B44335;
-	text-decoration: underline; }
- 
-a:hover {
-	color: #e4a9a2;
-	text-decoration: none;
-	transition: color 0.7s ease; }
- 
-#about {
-	font-size: 0.95em;
-	line-height: 18px;
-	padding-top: 8px; } 
- 
-body {
-	background-color: black;
-	color: #f2f2f2;
-   font-size: 1.63rem;
-	font-family: 'Open Sans', sans-serif;
-	  -webkit-transition: background-color 2s ease, color 2s ease;
-  /* Safari */
-  transition: background-color 2s ease, color 2s ease; }
-
-footer {
-	font-size: 14px;
-	margin: 3% 20% 0 20%; }	
- 
-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5em;
-  margin: 0px auto; }
-  h1#greeting {
-    color: #B44335; }
-
-h2 {
-  padding-top: 15px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 2.5em;
-  margin: 0px auto; }
-  
-.img-circle {
-    border-radius: 50%;
+  color: #54cccc;
+  text-decoration: underline;
 }
- 
-#introduction {
-	height: 100vh;
-	padding: 0 20% 0% 20%;
-	text-align: left; }
-  
-#landing-page {
-	height: 100vh;
-	background: url(../images/scene3.jpg) no-repeat 50% 50%;
-	background-size: cover; }
-  
-#logo {
-	display: inline-block;
-	position: absolute;
-	text-align: left;
-	width: 100px;
-	padding: 5px; }
-
-#nav-menu {
-	position: relative;
-	justify-content: space-between; 
-	margin-right: 1%;
-	text-align: right; }
-
-#nav-menu>div>a {
-	padding: 0 5px 0 5px;
+a:hover {
+	color: #a0e3e3;
 	text-decoration: none;
-	transition: none; }
+}
 
-#nav {
-	position: relative;
-	padding: 10px 10px 0 0;
-	display: table;
-	box-sizing: border-box;
-	width: 100%; }  
+strong { color: #cc5490; }
 
-#scroll {
-	position: absolute;
-	bottom: 1%;
-	width: 60%; }
+body {
+	color: #333;
+   font-family: "Roboto", sans-serif;
+   font-size: 1.5rem;
+   line-height: 1.75em;
+	margin: 5px;
+   -webkit-transition: background-color 2s ease, color 2s ease;
+   /* Safari */
+   transition: background-color 2s ease, color 2s ease;
+}
 
-.social-media {
-	float: left; }
-
-.social-media-icon {
-	padding: 0 1px 25px 1px; }
-
-strong {
-	color: #b43567; } 
-	 
-td { 
-	vertical-align: top; }
-
-/*
-	Tooltip effects
-	Assistance from: http://www.w3schools.com/css/css_tooltip.asp
-*/
-
-.tweetooltip {
-  cursor: pointer;
-  position: relative;
-  display: inline-block; }
-
-.tweetooltip .tooltiptext {
-  border: 2px solid white;
-  visibility: hidden;
-  width: 125px;
-  background-color: white;
-  color: black;
-  border-radius: 6px;
-  padding: 0 0 15px 0;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -60px;
-  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-  opacity: 0;
-  transition: opacity 1s; }
-  .tweetooltip .tooltiptext::after {
-    content: " ";
-    position: absolute;
-    top: 100%;
-    /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: white transparent transparent transparent; }
-	 
-.tweetooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1; }
- 
-.tooltiptext.clicked4:after {
-	 border-color: white transparent transparent transparent;} } 
-
-/*
-	Scroll indicator animation
-	Assistance from: http://www.transformicons.com/builder.html
-*/
-
-@-webkit-keyframes chevron-pulse {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 1; }
-  80% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@keyframes chevron-pulse {
-  0% {
-    opacity: 0; }
-  40% {
-    opacity: 1; }
-  80% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-.tcon-svgchevron {
-  height: 40px;
-  width: 40px; }
-
-.tcon-svgchevron path {
-  -webkit-animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  animation: chevron-pulse 3s infinite cubic-bezier(0.4, 0, 0.2, 1);
-  fill: transparent;
-  stroke: white;
-  stroke-width: 1px; }
-
-.tcon-svgchevron path.a1 {
-  -webkit-animation-delay: 0s;
-  animation-delay: 0s; }
-
-.tcon-svgchevron path.a2 {
-  -webkit-animation-delay: -0.5s;
-  animation-delay: -0.5s; }
-
-.tcon-svgchevron path.a3 {
-  -webkit-animation-delay: -1s;
-  animation-delay: -1s; }
-  
-/*
-	Button configuration for light & dark theme
-*/  
-  
-.clicked {
-  background-color: black;
-  color: white; }
-
-.clicked2 {
-  background-color: white;
-  color: black; }
-  .clicked2:hover {
-    background-color: #999999;
-    -webkit-transition: background-color 0.5s;
-    /* Safari */
-    transition: background-color 0.5s; }
-
-.clicked3 {
-  background-color: white;
-  color: black; }
-  
 button {
   background-color: #4c4c4c;
   color: white;
@@ -228,4 +38,283 @@ button {
     -webkit-transition: background-color 0.5s;
     /* Safari */
     transition: background-color 0.5s; }
-	
+
+footer {
+  margin: 0px auto;
+  padding-top: 50px;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  margin: 0px auto;
+	}
+  h2#greeting {
+    color: #6441a5; }
+
+h2 {
+  padding-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em;
+  font-weight: 600;
+  margin: 0px auto;
+  display: inline;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  position: absolute;
+  top: 9px;
+  left: -5px; }
+  nav ul {
+    list-style-type: none; }
+    nav ul li {
+      line-height: 1em; }
+
+p { font-size: 1em; } 
+
+/* Custom ids and classes */
+.asterisk { font-size: 9px !important; }
+
+.clicked {
+  background-color: #191919;
+  color: white;
+ }
+
+.clicked2 {
+  background-color: white;
+  color: black;
+}
+.clicked2:hover {
+   background-color: #999999;
+   -webkit-transition: background-color 0.5s;
+   /* Safari */
+   transition: background-color 0.5s;
+}
+
+div#about-me { font-family: "Roboto", sans-serif; }
+div#container {
+  margin: 0px auto;
+  padding: 25px;
+  height: 100%;
+  max-width: 75%;
+}
+
+#content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 50px 25px 50px 25px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.indent {
+	margin-left: 20px;
+}
+
+#logo {
+	display: inline-block;
+	position: absolute;
+	text-align: left;
+	width: 125px;
+	padding: 5px;
+}
+
+#nav {
+	position: relative;
+	display: table;
+	box-sizing: border-box;
+	width: 100%;
+}  
+
+#nav-menu {
+	position: relative;
+	justify-content: space-between; 
+	margin-right: 1%;
+	text-align: right;
+}
+
+#nav-menu>div>a {
+	text-decoration: none;
+	transition: none;
+}
+
+
+.profile-pic {
+	padding-bottom: 15px;
+}
+
+.social-icons {
+  color: #54cccc;
+  padding-right: 10px;
+  text-decoration: none;
+}
+.social-icons:hover {
+   color: #a0e3e3;
+   text-decoration: none;
+   -webkit-transition-duration: 0.5s;
+   /* Safari */
+   transition-duration: 0.5s;
+}
+
+.space { padding-top: 33px; }
+
+#theme { cursor: pointer; }	
+	 
+/*
+	Tooltip effects
+	Assistance from: http://www.w3schools.com/css/css_tooltip.asp
+*/
+
+/* Tooltip container */
+.tweetooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+/* Tooltip text */
+.tweetooltip .tooltiptext {
+  visibility: hidden;
+  width: 125px;
+  background-color: #f2f2f2;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+.tweetooltip .tooltiptext::after {
+   content: " ";
+   position: absolute;
+   top: 100%; /* At the bottom of the tooltip */
+   left: 50%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: #f2f2f2 transparent transparent transparent;
+}
+
+.tweetooltip .tooltipimage {
+	width: 150px;
+	  margin-left: -75px;
+}
+
+/* Show the tooltip text when mouse over the tooltip container */	 
+.tweetooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/**
+ *		Animation for sexy awesomeness
+**/
+
+/*animation element*/
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+
+/*animation element sliding left*/
+
+.animation-element.slide-left {
+  opacity: 0;
+  -moz-transition: all 500ms linear;
+  -webkit-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  transition: all 500ms linear;
+  -moz-transform: translate3d(-100px, 0px, 0px);
+  -webkit-transform: translate3d(-100px, 0px, 0px);
+  -o-transform: translate(-100px, 0px);
+  -ms-transform: translate(-100px, 0px);
+  transform: translate3d(-100px, 0px, 0px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  -moz-transform: translate3d(0px, 0px, 0px);
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+
+#test {
+	visibility: hidden;
+}
+
+.slideDown{
+	animation-name: slideDown;
+	-webkit-animation-name: slideDown;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease;	
+	-webkit-animation-timing-function: ease;	
+
+	visibility: visible !important;						
+}
+
+@keyframes slideDown {
+	0% {
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}			
+	100% {
+		transform: translateY(0%);
+	}		
+}
+
+@-webkit-keyframes slideDown {
+	0% {
+		-webkit-transform: translateY(-100%);
+	}
+	50%{
+		-webkit-transform: translateY(8%);
+	}
+	65%{
+		-webkit-transform: translateY(-4%);
+	}
+	80%{
+		-webkit-transform: translateY(4%);
+	}
+	95%{
+		-webkit-transform: translateY(-2%);
+	}			
+	100% {
+		-webkit-transform: translateY(0%);
+	}	
+}
