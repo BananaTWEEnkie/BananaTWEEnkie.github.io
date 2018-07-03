@@ -1,0 +1,106 @@
+/*
+ *	Initial Settings
+ */
+
+body {
+	background-color: #2F3136;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin: 25px;
+	-webkit-transition: background-color 1.5s ease, color 1.5s ease; /* Safari */
+   transition: background-color 1.5s ease, color 1.5s ease;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+	button:hover {
+		background-color: lightgrey;
+		-webkit-transition: background-color 0.5s; /* Safari */
+		transition: background-color 0.5s;
+	}
+
+h1, h3 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+hr {
+	border-top: 1px solid grey;
+}
+img {
+	width: 20%;
+}
+	img:hover{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	    -webkit-transition: box-shadow 0.5s; /* Safari */
+		transition: box-shadow 0.5s;		
+	}
+
+@media screen and (max-width: 992px) {
+   img {
+   	width:75%;
+   }
+}
+
+/* Text Settings */
+#testName, #testStep, #status {
+	text-align: center;
+}
+.good {
+	color: #4ca64c;
+}
+
+.average {
+	color: #ffff4c;
+}
+
+.bad {
+	color: #ff4c4c;
+}
+
+/* Divs Settings */
+.container-fluid{
+	background-color: #36393E;
+	border-radius: 5px;
+	padding: 25px;
+	margin-top: 25px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   text-align: center;
+   -webkit-transition: background-color 1.5s; /* Safari */
+	transition: background-color 1.5s;
+}
+
+/*
+ *	D3 settings
+ */
+.chart div {
+	font: 10px sans-serif;
+	background-color: steelblue;
+	text-align: right;
+	padding: 3px;
+	margin: 1px;
+	color: white;
+}
+
+.data-header {
+	display: block;
+	font-size: 20px;
+	margin-bottom:10px;
+}
+
+/* bootstrap config */
+.carousel-indicators {
+	bottom: -33px;
+}
+
+.carousel-indicators > li {
+	border-radius: 100px;
+	width: 10px;
+	height: 10px;
+}
