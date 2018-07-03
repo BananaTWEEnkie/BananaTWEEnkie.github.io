@@ -6,7 +6,7 @@ Given a json file, dynamically pull the data from the file and display it onto a
 ### Softwares/Websites Used
 
 * [Sublime 3](https://www.sublimetext.com/) - Text Editor where project was written, debugged and managed in.
-* [Apache2](https://httpd.apache.org/) - Used to 
+* [Apache2](https://httpd.apache.org/) - Used to test webpage. D3.js required using web addresses that start with http or https, so testing directly from my machine was not possible without an HTTP server setup.
 
 ### Languages/Libraries Used
 
