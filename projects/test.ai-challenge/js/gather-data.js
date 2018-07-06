@@ -1,10 +1,10 @@
 function testName(testCases) {
-	let testName = testCases.test_name;
+	const testName = testCases.test_name;
 	d3.select("#testName").text(testName);
 }
 
 function showStatusText(testCases){
-	let status = testCases.status;
+	const status = testCases.status;
 	if(!status) {
 		d3.select("#status")
 			.attr("class", "bad")
@@ -17,13 +17,13 @@ function showStatusText(testCases){
 }
 
 function testStep(testSteps){
-	let testStep = testSteps.step_name;
+	const testStep = testSteps.step_name;
 	d3.select("#testStep").text("Test Step: " + testStep);
 }
 
 function status(testSteps){
-	let status = testSteps.status;
-	let statusText = document.createTextNode(status);
+	const status = testSteps.status;
+	const statusText = document.createTextNode(status);
 	if(!status){
 		status.classList.add("failed");
 	}
@@ -31,15 +31,15 @@ function status(testSteps){
 }
 
 function createResultsHeader(testStepsDataDiv){
-	let resultsHeader = document.createElement("h1");
+	const resultsHeader = document.createElement("h1");
 	resultsHeader.innerHTML = "Results"
 	testStepsDataDiv.appendChild(resultsHeader);
-	let hr = document.createElement("hr");
+	const hr = document.createElement("hr");
 	testStepsDataDiv.appendChild(hr);
 }
 
 function createBoldText(text){
-	let boldText = document.createElement("b");
+	const boldText = document.createElement("b");
 	boldText.classList.add("data-header");
 	boldText.innerHTML = text;
 
@@ -47,12 +47,12 @@ function createBoldText(text){
 }
 
 function createLineBreak(testStepsDataDiv){
-	let lineBreak = document.createElement("br");
+	const lineBreak = document.createElement("br");
 	testStepsDataDiv.appendChild(lineBreak);
 }
 
 function createRow(testStepsDataDiv){
-	let row = document.createElement("div");
+	const row = document.createElement("div");
 	row.classList.add("row");
 	testStepsDataDiv.appendChild(row);
 
@@ -60,7 +60,7 @@ function createRow(testStepsDataDiv){
 }
 
 function createColumn(row){
-	let column = document.createElement("div");
+	const column = document.createElement("div");
 	column.classList.add("col-md");
 	row.appendChild(column);
 
@@ -91,12 +91,12 @@ function createImage(screenshot, countImages){
 }
 
 function createDataChart(testStepsData, column, color){
-	let dataset = testStepsData;
-	let maxValue = d3.max(dataset);
-	let width = 75;
-	let height = 100;
-	let barPadding = 3;
-	let barWidth = (width / dataset.length);
+	const dataset = testStepsData;
+	const maxValue = d3.max(dataset);
+	const width = 75;
+	const height = 100;
+	const barPadding = 3;
+	const barWidth = (width / dataset.length);
 
 	let svg = d3.select(column)
 		.append("svg")
@@ -105,7 +105,7 @@ function createDataChart(testStepsData, column, color){
 		.attr("class", "bar-chart");
 
 	let yScale = d3.scaleLinear()
-		.domain([0, d3.max(dataset)])
+		.domain([0, maxValue])
 		.range([0, height - 10]);
 
 	let barChart = svg.selectAll("rect")
@@ -143,8 +143,8 @@ function createDataChart(testStepsData, column, color){
 }
 
 function createLaunchTimeElement(launchTime, launchColumn){
-	let info = document.createElement("text");
-	let text = document.createTextNode("Average Time: " + launchTime + " ms");
+	const info = document.createElement("text");
+	const text = document.createTextNode("Average Time: " + launchTime + " ms");
 	info.appendChild(text);
 	// change color of text to show if data is good(green) or bad(red)
 	if(launchTime < 250){
@@ -160,14 +160,14 @@ function createLaunchTimeElement(launchTime, launchColumn){
 }
 
 function createMemoryElement(memory, memoryColumn){
-	let info = document.createTextNode("Average Memory: " + memory + " kb");
+	const info = document.createTextNode("Average Memory: " + memory + " kb");
 	memoryColumn.appendChild(info);
 
 	createLineBreak(memoryColumn);
 }
 
 function createCPUElement(cpu, cpuColumn){
-	let info = document.createTextNode("Average CPU Usage: " + cpu + "%");
+	const info = document.createTextNode("Average CPU Usage: " + cpu + "%");
 	cpuColumn.appendChild(info);
 
 	createLineBreak(cpuColumn);
@@ -177,11 +177,11 @@ const start = async function() {
 	// gather all data from json file
 	const data = await d3.json("data.json");
 
-	let testCases = data.test_cases;
+	const testCases = data.test_cases;
 	let countList = 0;
 	let countImages = 0;
 	for(let i = 0; i < testCases.length; i++) {
-		let testSteps = data.test_cases[i].test_steps;
+		const testSteps = data.test_cases[i].test_steps;
 		for(let i = 0; i < testSteps.length; i++) {
 			d3.select(".carousel-indicators")
 				.append("li")
@@ -204,25 +204,25 @@ const update = async function(testCaseNumber, testStepNumber) {
 	// gather all data from json file
 	const data = await d3.json("data.json");
 
-	let testCases = data.test_cases[testCaseNumber]
+	const testCases = data.test_cases[testCaseNumber]
 
 	testName(testCases);
 	showStatusText(testCases);
 
 	// show users the steps the bot is taking
-	let testSteps = testCases.test_steps;
+	const testSteps = testCases.test_steps;
 	testStep(testSteps[testStepNumber]);
 
 	// create a div for each data
-	let testStepsDataDiv = document.getElementsByClassName("container-fluid")[0];
+	const testStepsDataDiv = document.getElementsByClassName("container-fluid")[0];
 
 	createResultsHeader(testStepsDataDiv);
 
 	// display performance data
-	let row = createRow(testStepsDataDiv);
+	const row = createRow(testStepsDataDiv);
 
 	// attach information to each screenshot
-	let launchTimeColumn = createColumn(row);
+	const launchTimeColumn = createColumn(row);
 	launchTimeColumn.appendChild(createBoldText("Launch Time"));
 	// Creating chart with d3.js
 	createDataChart(testSteps[testStepNumber].launch_times, launchTimeColumn, "steelblue");
@@ -230,7 +230,7 @@ const update = async function(testCaseNumber, testStepNumber) {
 
 	let sum = 0;
 
-	let launchTime = testSteps[testStepNumber].launch_times;
+	const launchTime = testSteps[testStepNumber].launch_times;
 	if(launchTime.hasOwnProperty("length")) {	
 		for(let k = 0; k < launchTime.length; k++) {
 			sum += launchTime[k]; 
@@ -242,12 +242,12 @@ const update = async function(testCaseNumber, testStepNumber) {
 		createLaunchTimeElement(average.toFixed(2), launchTimeColumn);
 	}
 
-	let memoryColumn = createColumn(row);
+	const memoryColumn = createColumn(row);
 	memoryColumn.appendChild(createBoldText("Memory"));
 	createDataChart(testSteps[testStepNumber].memory, memoryColumn, "orange");
 	createLineBreak(memoryColumn);
 
-	let memory = testSteps[testStepNumber].memory;
+	const memory = testSteps[testStepNumber].memory;
 	if(memory.hasOwnProperty("length")) {
 	for(let k = 0; k < memory.length; k++) {
 			sum += memory[k]; 
@@ -259,12 +259,12 @@ const update = async function(testCaseNumber, testStepNumber) {
 		createMemoryElement(average.toFixed(2), memoryColumn);	
 	}	
 
-	let cpuColumn = createColumn(row);
+	const cpuColumn = createColumn(row);
 	cpuColumn.appendChild(createBoldText("CPU"));
 	createDataChart(testSteps[testStepNumber].cpu, cpuColumn, "#82b446");
 	createLineBreak(cpuColumn);
 
-	let cpu = testSteps[testStepNumber].cpu;
+	const cpu = testSteps[testStepNumber].cpu;
 	if(cpu.hasOwnProperty("length")) {	
 		for(let k = 0; k < cpu.length; k++) {
 			sum += cpu[k]; 
